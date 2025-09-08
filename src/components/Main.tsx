@@ -8,8 +8,15 @@ import { BiLogoPostgresql } from "react-icons/bi"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiRedux, SiTypescript } from "react-icons/si"
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5"
+import { useNavigate } from "react-router"
 
 const Main = () => {
+  const navigate = useNavigate()
+
+  const toMailDrop = () => {
+    navigate("/projects/maildrop")
+  }
+
   return (
     <main className="bg-primary p-2">
       <div className="h-30 w-30 rounded-full overflow-hidden mt-50 mx-auto" data-aos="slide-down">
@@ -46,7 +53,7 @@ const Main = () => {
           <p className="text-muted text-sm font-inter mt-2">
             An Email marketing platform that enables users to manage campaigns, subscribers and send targetted or promotional emails to them
           </p>
-          <button className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
+          <button onClick={toMailDrop} className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
             <span>View Project</span>
             <SlArrowRight />
           </button>

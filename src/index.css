@@ -43,6 +43,10 @@
   @apply bg-secondary border-1 border-secondary hover:bg-transparent hover:text-secondary text-accent py-2 px-3 rounded-md cursor-pointer;
 }
 
+@utility btn-lang {
+  @apply bg-gray-900 text-blue-500 py-1 px-2 rounded-md border-1 border-gray-700;
+}
+
 .test {
   color: #151515;
 }
