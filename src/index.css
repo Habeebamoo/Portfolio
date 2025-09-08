@@ -47,10 +47,6 @@
   @apply bg-gray-900 text-blue-500 py-1 px-2 rounded-md border-1 border-gray-700;
 }
 
-.test {
-  color: #151515;
-}
-
 @theme {
   --color-primary: #151515;
   --color-secondary: #4F46EF;

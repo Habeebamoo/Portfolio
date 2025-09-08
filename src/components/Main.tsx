@@ -25,8 +25,8 @@ const Main = () => {
       <div className="mt-4" data-aos="zoom-in">
         <h1 className="text-accent font-roboto text-3xl text-center">Full-Stack <span className="text-secondary">Developer</span></h1>
       </div>
-      <p className="text-muted text-sm mt-2 text-center" data-aos="zoom-in">While crafting premium digital experiences with modern technologies. I enjoy creating fast, secure and reliable solutions</p>
-      <div className="mt-3 flex-center gap-3" data-aos="zoom-in">
+      <p className="text-muted text-sm mt-2 text-center sm:w-[400px] mx-auto" data-aos="zoom-in">While crafting premium digital experiences with modern technologies. I enjoy creating fast, secure and reliable solutions</p>
+      <div className="mt-4 flex-center gap-3" data-aos="zoom-in">
         <button className="btn-secondary text-[12px] font-outfit">View My Work</button>
         <button className="btn-primary text-[12px] font-outfit">Download Resume</button>
       </div>
@@ -44,7 +44,7 @@ const Main = () => {
       </div>
 
       <h1 className="text-accent text-center font-inter text-2xl">What I've Been Up To</h1>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[800px] mx-auto">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
         <div className="p-5 bg-box border-1 border-border rounded-md" data-aos="zoom-in">
           <div className="rounded-md overflow-hidden">
             <img src={maildrop1} />
@@ -75,7 +75,7 @@ const Main = () => {
       </div>
 
       <h1 className="text-accent text-center font-inter text-2xl mt-30">My Skills</h1>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[800px] mx-auto">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
         <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
           <div className="flex-start gap-2">
             <div className="text-secondary">
@@ -140,10 +140,9 @@ const Main = () => {
               id="message" 
               rows={4}
               className="border-1 border-border p-2 rounded-md mt-1 w-full resize-none text-white font-inter"
-              value={2}
             ></textarea>
           </div>
-          <button className="btn-secondary w-full mt-6 font-outfit">Send Message</button>
+          <button onClick={() => console.log("me")} className="btn-secondary w-full mt-6 font-outfit">Send Message</button>
         </form>
       </div>
     </main>
