@@ -5,6 +5,16 @@
   src: url("./fonts/Roboto_Condensed/static/RobotoCondensed-Medium.ttf");
 }
 
+@font-face {
+  font-family: "outfit";
+  src: url("./fonts/Outfit/static/Outfit-Medium.ttf");
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./fonts/Inter/static/Inter_18pt-Medium.ttf");
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }
@@ -25,6 +35,14 @@
   @apply flex justify-around items-center;
 }
 
+@utility btn-primary {
+  @apply bg-black border-1 border-black text-white hover:text-black hover:bg-transparent py-2 px-3 rounded-md cursor-pointer;
+}
+
+@utility btn-secondary {
+  @apply bg-secondary border-1 border-secondary hover:bg-transparent hover:text-secondary text-accent py-2 px-3 rounded-md cursor-pointer;
+}
+
 .test {
   color: rgb(8, 28, 94)
 }
@@ -37,4 +55,6 @@
   --color-box: #343434;
   --color-border: #454545;
   --font-roboto: "roboto";
+  --font-outfit: "outfit";
+  --font-inter: "inter";
 }
