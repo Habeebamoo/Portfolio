@@ -1,8 +1,13 @@
-import { FaArrowDown } from "react-icons/fa"
+import { FaArrowDown, FaCode, FaDatabase, FaGitAlt, FaHtml5, FaReact } from "react-icons/fa"
 import anime from "../assets/anime.jpeg"
 import maildrop1 from "../assets/maildrop-img1.png"
 import flashquiz1 from "../assets/flash-img1.png"
 import { SlArrowRight } from "react-icons/sl"
+import { FaGolang } from "react-icons/fa6"
+import { BiLogoPostgresql } from "react-icons/bi"
+import { RiTailwindCssFill } from "react-icons/ri"
+import { SiRedux, SiTypescript } from "react-icons/si"
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5"
 
 const Main = () => {
   return (
@@ -59,6 +64,43 @@ const Main = () => {
             <span>View Project</span>
             <SlArrowRight />
           </button>
+        </div>
+      </div>
+
+      <h1 className="text-accent text-center font-inter text-2xl mt-20">My Skills</h1>
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[800px] mx-auto">
+        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="slide-up">
+          <div className="flex-start gap-2">
+            <div className="text-secondary">
+              <FaDatabase size={18} />
+            </div>
+            <h1 className="font-inter text-xl text-accent">Backend Developement</h1>
+          </div>
+          <p className="text-muted font-inter text-sm py-3">I focus on building reliable and scalable backend systems, clean APIs and efficeint database management.</p>
+          <div className="flex-start gap-2">
+            <div className="text-blue-500"><FaGolang size={40} /></div>
+            <div className="text-blue-500"><BiLogoPostgresql size={26} /></div>
+            <div className="text-orange-500"><FaGitAlt size={24} /></div>
+          </div>
+        </div>
+        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="slide-up">
+          <div className="flex-start gap-2">
+            <div className="text-secondary">
+              <FaCode size={21} />
+            </div>
+            <h1 className="font-inter text-xl text-accent">Frontend Developement</h1>
+          </div>
+          <p className="text-muted font-inter text-sm py-3">I build simple, responsive and user-friendly interfaces that works smoothly accross devices</p>
+          <div className="flex-start gap-3 mt-1">
+            <div className="text-blue-500"><FaReact size={22} /></div>
+            <div className="text-blue-500"><RiTailwindCssFill size={26} /></div>
+            <div className="text-purple-500"><SiRedux size={22} /></div>
+            <div className="text-blue-500"><SiTypescript size={21} /></div>
+            <div className="text-yellow-500"><IoLogoJavascript size={23} /></div>
+            <div className="text-orange-500"><FaHtml5 size={24} /></div>
+            <div className="text-blue-500"><IoLogoCss3 size={24} /></div>
+            <div className="text-orange-500"><FaGitAlt size={24} /></div>
+          </div>
         </div>
       </div>
     </main>
