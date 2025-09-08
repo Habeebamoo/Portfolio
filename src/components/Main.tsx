@@ -85,7 +85,7 @@ const Main = () => {
           </div>
           <p className="text-muted font-inter text-sm py-3">I focus on building reliable and scalable backend systems, clean APIs and efficient database management.</p>
           <div className="flex-start gap-2">
-            <div className="text-blue-500"><FaGolang size={40} /></div>
+            <div className="text-blue-400"><FaGolang size={40} /></div>
             <div className="text-blue-500"><BiLogoPostgresql size={26} /></div>
           </div>
         </div>
@@ -98,8 +98,8 @@ const Main = () => {
           </div>
           <p className="text-muted font-inter text-sm py-3">I build simple, responsive and user-friendly interfaces that works smoothly accross devices</p>
           <div className="flex-start gap-3 mt-1">
-            <div className="text-blue-500"><FaReact size={22} /></div>
-            <div className="text-blue-500"><RiTailwindCssFill size={26} /></div>
+            <div className="text-blue-400"><FaReact size={22} /></div>
+            <div className="text-blue-400"><RiTailwindCssFill size={26} /></div>
             <div className="text-purple-500"><SiRedux size={22} /></div>
             <div className="text-blue-500"><SiTypescript size={21} /></div>
             <div className="text-yellow-500"><IoLogoJavascript size={23} /></div>
