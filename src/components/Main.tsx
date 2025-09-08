@@ -7,7 +7,7 @@ import { SlArrowRight } from "react-icons/sl"
 const Main = () => {
   return (
     <main className="bg-primary p-2">
-      <div className="h-30 w-30 rounded-full overflow-hidden mt-30 mx-auto" data-aos="slide-down">
+      <div className="h-30 w-30 rounded-full overflow-hidden mt-50 mx-auto" data-aos="slide-down">
         <img src={anime} className="h-full w-full object-cover" />
       </div>
       <div className="mt-4" data-aos="zoom-in">
@@ -19,43 +19,43 @@ const Main = () => {
         <button className="btn-primary text-[12px] font-outfit">Download Resume</button>
       </div>
 
-      <div className="mt-10">
-        <div className="py-8 px-4 bg-box border-1 border-border rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
+      <div className="mt-20">
+        <div className="py-8 px-2 rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
           <h1 className="text-accent font-outfit text-lg">About Me</h1>
           <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a 17 year old software developer from Nigeria who enjoys turning ideas into working applications. With 2+ years hands on experience, i like building end-to-end products from designing user expeiences to creating reliable systems behind the scenes.</p>
           <p className="text-sm text-muted font-inter mt-3">I'm always learning, experimenting and improving the way i approach problems</p>
         </div>
       </div>
 
-      <div className="flex-center py-20 text-muted">
-        <FaArrowDown size={19} />
+      <div className="flex-center py-40 text-muted">
+        <FaArrowDown size={19} className="animate-bounce" />
       </div>
 
-      <h1 className="text-accent text-center font-inter text-xl">What I've Been Up To</h1>
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5 w-[90%] md:w-[800px] mx-auto">
-        <div className="p-4 bg-box border-1 border-border rounded-md" data-aos="zoom-in">
+      <h1 className="text-accent text-center font-inter text-2xl">What I've Been Up To</h1>
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[800px] mx-auto">
+        <div className="p-5 bg-box border-1 border-border rounded-md" data-aos="zoom-in">
           <div className="rounded-md overflow-hidden">
             <img src={maildrop1} />
           </div>
-          <h1 className="text-accent mt-4 font-inter text-xl">MailDrop</h1>
-          <p className="text-muted text-sm font-inter mt-1">
+          <h1 className="text-accent mt-6 font-inter text-xl">MailDrop</h1>
+          <p className="text-muted text-sm font-inter mt-2">
             An Email marketing platform that enables users to manage campaigns, subscribers and send targetted or promotional emails to them
           </p>
-          <button className="btn-secondary mt-2 text-sm flex-center gap-2 mx-auto">
+          <button className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
             <span>View Project</span>
             <SlArrowRight />
           </button>
         </div>
 
-        <div className="p-4 bg-box border-1 border-border rounded-md" data-aos="zoom-in">
+        <div className="p-5 bg-box border-1 border-border rounded-md" data-aos="zoom-in">
           <div className="rounded-md overflow-hidden">
             <img src={flashquiz1} />
           </div>
-          <h1 className="text-accent mt-4 font-inter text-xl">FlashQuiz</h1>
-          <p className="text-muted text-sm font-inter mt-1">
+          <h1 className="text-accent mt-6 font-inter text-xl">FlashQuiz</h1>
+          <p className="text-muted text-sm font-inter mt-2">
             A Quiz platform that enables users to take quizzes, track progress and get ranked based on thier stats
           </p>
-          <button className="btn-secondary mt-2 text-sm flex-center gap-2 mx-auto">
+          <button className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
             <span>View Project</span>
             <SlArrowRight />
           </button>
