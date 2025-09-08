@@ -24,7 +24,7 @@ const Main = () => {
         <button className="btn-primary text-[12px] font-outfit">Download Resume</button>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-30">
         <div className="py-8 px-2 rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
           <h1 className="text-accent font-outfit text-lg">About Me</h1>
           <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a 17 year old software developer from Nigeria who enjoys turning ideas into working applications. With 2+ years hands on experience, i like building end-to-end products from designing user expeiences to creating reliable systems behind the scenes.</p>
@@ -67,7 +67,7 @@ const Main = () => {
         </div>
       </div>
 
-      <h1 className="text-accent text-center font-inter text-2xl mt-20">My Skills</h1>
+      <h1 className="text-accent text-center font-inter text-2xl mt-30">My Skills</h1>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[800px] mx-auto">
         <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
           <div className="flex-start gap-2">
@@ -103,8 +103,8 @@ const Main = () => {
         </div>
       </div>
 
-      <h1 className="text-accent text-center font-inter text-2xl mt-20">Let's Work Together</h1>
-      <div className="p-6 bg-box border-1 border-border rounded-lg w-[90%] md:w-[500px] mx-auto mt-6">
+      <h1 className="text-accent text-center font-inter text-2xl mt-30">Let's Work Together</h1>
+      <div className="p-6 bg-box border-1 border-border rounded-lg w-[90%] md:w-[500px] mx-auto mt-6 mb-10">
         <h1 className="font-inter text-accent text-xl">Send a Message</h1>
         <p className="text-muted font-inter text-sm py-2">I'm always interested in new opportunities and exciting projects. Whether you need a complete website or want to discuss a potential collaboration, I'd love to hear from you</p>
         <form className="mt-5">
