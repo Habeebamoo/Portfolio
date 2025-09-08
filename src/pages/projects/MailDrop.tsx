@@ -23,7 +23,7 @@ const MailDrop = () => {
 
   return (
     <main className="bg-primary p-5">
-      <div className="mt-30 md:flex-center md:flex-col">
+      <div className="mt-30 md:flex-center md:flex-col pl-2">
         <button onClick={goBack} className="btn-primary text-sm font-outfit flex-center gap-2">
           <SlArrowLeft size={10} />
           <span>Back to Projects</span>
@@ -41,7 +41,7 @@ const MailDrop = () => {
         </div>
       </div>
 
-      <div className="bg-box border-1 border-border p-6 rounded-md w-[90%] md:w-[400px] mx-auto mt-10">
+      <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
         <h1 className="font-inter text-accent">Project Details</h1>
         <p className="text-sm text-muted font-inter mt-4">
           MailDrop is a simple and powerful email marketing platform that enable users to create campaigns, manage subscribers, track engagements, and connect with them by sending promotional emails.
@@ -51,7 +51,7 @@ const MailDrop = () => {
         </p>
       </div>
 
-      <div className="bg-box border-1 border-border p-6 rounded-md w-[90%] md:w-[400px] mx-auto mt-10">
+      <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
         <h1 className="text-accent font-inter">Technologies Used</h1>
         <div className="text-sm flex-start flex-wrap mt-4 gap-2">
           <div className="btn-lang">React.js</div>
@@ -63,18 +63,20 @@ const MailDrop = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10 mb-30 w-[90%] mx-auto">
-        <div className="bg-box p-4 border-1 border-border rounded-lg">
+      <div className=" mt-10 mb-30 flex-center flex-col">
+        <div className="bg-box p-4 border-1 border-border rounded-lg w-[95%] md:w-[400px]">
           <img src={img1} className="rounded-md" />
         </div>
-        <div className="bg-box p-4 border-1 border-border rounded-lg">
-          <img src={img2} className="rounded-md" />
-        </div>
-        <div className="bg-box p-4 border-1 border-border rounded-lg">
-          <img src={img3} className="rounded-md" />
-        </div>
-        <div className="bg-box p-4 border-1 border-border rounded-lg">
-          <img src={img4} className="rounded-md" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 mx-auto w-[95%] lg:w-[700px]">
+          <div className="bg-box p-4 border-1 border-border rounded-lg">
+            <img src={img2} className="rounded-md" />
+          </div>
+          <div className="bg-box p-4 border-1 border-border rounded-lg">
+            <img src={img3} className="rounded-md" />
+          </div>
+          <div className="bg-box p-4 border-1 border-border rounded-lg">
+            <img src={img4} className="rounded-md" />
+          </div>
         </div>
       </div>
 
