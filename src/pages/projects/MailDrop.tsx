@@ -54,7 +54,7 @@ const MailDrop = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mb-30 w-[90%] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10 mb-30 w-[90%] mx-auto">
         <div className="bg-box p-4 border-1 border-border rounded-lg">
           <img src={img1} className="rounded-md" />
         </div>
