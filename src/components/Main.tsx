@@ -18,6 +18,10 @@ const Main = () => {
     navigate("/projects/maildrop")
   }
 
+  const toFlashquiz = () => {
+    navigate("/projects/flashquiz")
+  }
+
   return (
     <main className="bg-primary p-2">
       <div className="h-30 w-30 rounded-full overflow-hidden mt-50 mx-auto" data-aos="slide-down">
@@ -70,7 +74,7 @@ const Main = () => {
           <p className="text-muted text-sm font-inter mt-2">
             A Quiz platform that enables users to take quizzes, track progress and get ranked based on thier stats
           </p>
-          <button className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
+          <button onClick={toFlashquiz} className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
             <span>View Project</span>
             <SlArrowRight />
           </button>

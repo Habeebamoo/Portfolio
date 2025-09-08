@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage"
 import MailDrop from "./pages/projects/MailDrop"
 import Projects from "./layouts/Projects"
 import NotFound from "./pages/Notfound"
+import FlashQuiz from "./pages/projects/FlashQuiz"
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<Projects />}>
           <Route path="maildrop" element={<MailDrop />} />
+          <Route path="flashquiz" element={<FlashQuiz />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </>
