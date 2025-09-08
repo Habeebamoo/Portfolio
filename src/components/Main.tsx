@@ -9,6 +9,7 @@ import { RiTailwindCssFill } from "react-icons/ri"
 import { SiRedux, SiTypescript } from "react-icons/si"
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5"
 import { useNavigate } from "react-router"
+import CodeBox from "./CodeBox"
 
 const Main = () => {
   const navigate = useNavigate()
@@ -31,6 +32,8 @@ const Main = () => {
         <button className="btn-primary text-[12px] font-outfit">Download Resume</button>
       </div>
 
+      <CodeBox />
+
       <div className="mt-30">
         <div className="py-8 px-2 rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
           <h1 className="text-accent font-outfit text-lg">About Me</h1>
@@ -45,7 +48,7 @@ const Main = () => {
 
       <h1 className="text-accent text-center font-inter text-2xl">What I've Been Up To</h1>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
-        <div className="p-5 bg-box border-1 border-border rounded-md" data-aos="zoom-in">
+        <div className="p-5 bg-box border-1 border-border rounded-lg" data-aos="zoom-in">
           <div className="rounded-md overflow-hidden">
             <img src={maildrop1} />
           </div>
@@ -59,7 +62,7 @@ const Main = () => {
           </button>
         </div>
 
-        <div className="p-5 bg-box border-1 border-border rounded-md" data-aos="zoom-in">
+        <div className="p-5 bg-box border-1 border-border rounded-lg" data-aos="zoom-in">
           <div className="rounded-md overflow-hidden">
             <img src={flashquiz1} />
           </div>
