@@ -69,21 +69,20 @@ const Main = () => {
 
       <h1 className="text-accent text-center font-inter text-2xl mt-20">My Skills</h1>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[800px] mx-auto">
-        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="slide-up">
+        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
           <div className="flex-start gap-2">
             <div className="text-secondary">
               <FaDatabase size={18} />
             </div>
             <h1 className="font-inter text-xl text-accent">Backend Developement</h1>
           </div>
-          <p className="text-muted font-inter text-sm py-3">I focus on building reliable and scalable backend systems, clean APIs and efficeint database management.</p>
+          <p className="text-muted font-inter text-sm py-3">I focus on building reliable and scalable backend systems, clean APIs and efficient database management.</p>
           <div className="flex-start gap-2">
             <div className="text-blue-500"><FaGolang size={40} /></div>
             <div className="text-blue-500"><BiLogoPostgresql size={26} /></div>
-            <div className="text-orange-500"><FaGitAlt size={24} /></div>
           </div>
         </div>
-        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="slide-up">
+        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
           <div className="flex-start gap-2">
             <div className="text-secondary">
               <FaCode size={21} />
@@ -102,6 +101,43 @@ const Main = () => {
             <div className="text-orange-500"><FaGitAlt size={24} /></div>
           </div>
         </div>
+      </div>
+
+      <h1 className="text-accent text-center font-inter text-2xl mt-20">Let's Work Together</h1>
+      <div className="p-6 bg-box border-1 border-border rounded-lg w-[90%] md:w-[500px] mx-auto mt-6">
+        <h1 className="font-inter text-accent text-xl">Send a Message</h1>
+        <p className="text-muted font-inter text-sm py-2">I'm always interested in new opportunities and exciting projects. Whether you need a complete website or want to discuss a potential collaboration, I'd love to hear from you</p>
+        <form className="mt-5">
+          <div>
+            <label htmlFor="name" className="text-sm text-accent font-inter">Your Name</label>
+            <input 
+              type="text" 
+              name="name"
+              id="name"
+              className="border-1 border-border p-2 rounded-md text-white font-inter mt-1 w-full"
+            />
+          </div>
+          <div className="mt-3">
+            <label htmlFor="email" className="text-sm text-accent font-inter">Your Email</label>
+            <input 
+              type="email" 
+              name="email"
+              id="email"
+              className="border-1 border-border p-2 rounded-md mt-1 text-white font-inter w-full"
+            />
+          </div>
+          <div className="mt-3">
+            <label htmlFor="message" className="text-sm text-accent font-inter">Message</label>
+            <textarea 
+              name="message" 
+              id="message" 
+              rows={4}
+              className="border-1 border-border p-2 rounded-md mt-1 w-full resize-none text-white font-inter"
+              value={2}
+            ></textarea>
+          </div>
+          <button className="btn-secondary w-full mt-6 font-outfit">Send Message</button>
+        </form>
       </div>
     </main>
   )
