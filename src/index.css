@@ -44,11 +44,11 @@
 }
 
 .test {
-  color: rgb(8, 28, 94)
+  color: #151515;
 }
 
 @theme {
-  --color-primary: #252525;
+  --color-primary: #151515;
   --color-secondary: #4F46EF;
   --color-accent: #FAFAFA;
   --color-muted: #B5B5B5;
