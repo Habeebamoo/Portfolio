@@ -5,6 +5,7 @@ import img2 from "../../assets/maildrop-img2.png"
 import img3 from "../../assets/maildrop-img3.png"
 import img4 from "../../assets/maildrop-img4.png"
 import { useNavigate } from "react-router"
+import { FaExternalLinkAlt } from "react-icons/fa"
 
 const MailDrop = () => {
   const navigate = useNavigate()
@@ -32,6 +33,7 @@ const MailDrop = () => {
         <p className="text-muted text-sm font-inter mt-2">Email Marketing Platform</p>
         <div className="flex-start gap-3 mt-4">
           <button onClick={viewLive} className="btn-secondary text-sm font-outfit flex-center gap-2">
+            <FaExternalLinkAlt size={12} />
             <span>View Live</span>
           </button>
           <button onClick={viewRepo} className="btn-primary text-sm font-outfit flex-center gap-2">
