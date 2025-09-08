@@ -103,9 +103,9 @@ const Main = () => {
             <div className="text-purple-500"><SiRedux size={22} /></div>
             <div className="text-blue-500"><SiTypescript size={21} /></div>
             <div className="text-yellow-500"><IoLogoJavascript size={23} /></div>
-            <div className="text-orange-500"><FaHtml5 size={24} /></div>
-            <div className="text-blue-500"><IoLogoCss3 size={24} /></div>
-            <div className="text-orange-500"><FaGitAlt size={24} /></div>
+            <div className="text-orange-500"><FaHtml5 size={25} /></div>
+            <div className="text-blue-500"><IoLogoCss3 size={25} /></div>
+            <div className="text-orange-500"><FaGitAlt size={25} /></div>
           </div>
         </div>
       </div>
