@@ -13,6 +13,14 @@ const MailDrop = () => {
     navigate("/")
   }
 
+  const viewLive = () => {
+    window.location.href= "https://maildrop.netlify.app"
+  }
+
+  const viewRepo = () => {
+    window.location.href= "https://github.com/Habeebamoo/MailDrop"
+  }
+
   return (
     <main className="bg-primary p-5">
       <div className="mt-30 md:flex-center md:flex-col">
@@ -20,37 +28,38 @@ const MailDrop = () => {
           <SlArrowLeft size={10} />
           <span>Back to Projects</span>
         </button>
-        <h1 className="text-accent font-inter text-2xl mt-2">MailDrop</h1>
+        <h1 className="text-accent font-inter text-2xl mt-4">MailDrop</h1>
         <p className="text-muted text-sm font-inter mt-2">Email Marketing Platform</p>
         <div className="flex-start gap-3 mt-4">
-          <button className="btn-secondary text-sm font-outfit flex-center gap-2">
+          <button onClick={viewLive} className="btn-secondary text-sm font-outfit flex-center gap-2">
             <span>View Live</span>
           </button>
-          <button className="btn-primary text-sm font-outfit flex-center gap-2">
+          <button onClick={viewRepo} className="btn-primary text-sm font-outfit flex-center gap-2">
             <BsGithub />
             <span>View Code</span>
           </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[95%] lg:w-[800px] mx-auto mt-10">
-        <div className="bg-box border-1 border-border p-6 rounded-md">
-          <h1 className="font-inter text-accent">Project Details</h1>
-          <p className="text-sm text-muted font-inter mt-4">
-            MailDrop is a simple and powerful email marketing platform that enable users to create campaigns, manage subscribers, track engagements, and connect with them by sending promotional emails.
-          </p>
-        </div>
+      <div className="bg-box border-1 border-border p-6 rounded-md w-[90%] md:w-[400px] mx-auto mt-10">
+        <h1 className="font-inter text-accent">Project Details</h1>
+        <p className="text-sm text-muted font-inter mt-4">
+          MailDrop is a simple and powerful email marketing platform that enable users to create campaigns, manage subscribers, track engagements, and connect with them by sending promotional emails.
+        </p>
+        <p className="text-sm text-muted font-inter mt-4">
+          The platform supports Third parties login (Google), Other security featues inclued JWT Authentication, Rate Limiting and XSS (Cross Site Scripting) prevention, Making it secure and reliable for users.
+        </p>
+      </div>
 
-        <div className="bg-box border-1 border-border p-6 rounded-md">
-          <h1 className="text-accent font-inter">Technologies Used</h1>
-          <div className="text-sm flex-start flex-wrap mt-4 gap-2">
-            <div className="btn-lang">React.js</div>
-            <div className="btn-lang">TailwindCSS</div>
-            <div className="btn-lang">Go</div>
-            <div className="btn-lang">Gin Framework</div>
-            <div className="btn-lang">GORM</div>
-            <div className="btn-lang">PostgreSQL</div>
-          </div>
+      <div className="bg-box border-1 border-border p-6 rounded-md w-[90%] md:w-[400px] mx-auto mt-10">
+        <h1 className="text-accent font-inter">Technologies Used</h1>
+        <div className="text-sm flex-start flex-wrap mt-4 gap-2">
+          <div className="btn-lang">React.js</div>
+          <div className="btn-lang">TailwindCSS</div>
+          <div className="btn-lang">Go</div>
+          <div className="btn-lang">Gin Framework</div>
+          <div className="btn-lang">GORM</div>
+          <div className="btn-lang">PostgreSQL</div>
         </div>
       </div>
 
