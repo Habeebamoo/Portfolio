@@ -11,6 +11,7 @@ import { useEffect } from "react"
 import HomePage from "./pages/HomePage"
 import MailDrop from "./pages/projects/MailDrop"
 import Projects from "./layouts/Projects"
+import NotFound from "./pages/Notfound"
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />}>
           <Route path="maildrop" element={<MailDrop />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </>
     )
   )
