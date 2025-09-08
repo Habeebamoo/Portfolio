@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "roboto";
+  src: url("./fonts/Roboto_Condensed/static/RobotoCondensed-Medium.ttf");
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility flex-start {
+  @apply flex justify-start items-center;
+}
+
+@utility flex-end {
+  @apply flex justify-end items-center;
+}
+
+@utility flex-between {
+  @apply flex justify-between items-center;
+}
+
+@utility flex-around {
+  @apply flex justify-around items-center;
+}
+
+.test {
+  color: rgb(8, 28, 94)
+}
+
+@theme {
+  --color-primary: #252525;
+  --color-secondary: #4F46EF;
+  --color-accent: #FAFAFA;
+  --color-muted: #B5B5B5;
+  --color-box: #343434;
+  --color-border: #454545;
+  --font-roboto: "roboto";
+}
