@@ -95,7 +95,7 @@ const Main = () => {
           <p className="text-muted font-inter text-sm py-3">I focus on building reliable and scalable backend systems, clean APIs and efficient database management.</p>
           <div className="flex-start gap-2">
             <div className="text-blue-400"><FaGolang size={40} /></div>
-            <div className="text-blue-500"><BiLogoPostgresql size={26} /></div>
+            <div className="text-sky-700"><BiLogoPostgresql size={26} /></div>
           </div>
         </div>
         <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
