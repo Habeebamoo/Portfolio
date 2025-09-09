@@ -44,7 +44,7 @@
 }
 
 @utility btn-lang {
-  @apply bg-gray-900 text-blue-500 py-1 px-3 rounded-md border-1 border-gray-700;
+  @apply bg-gray-900 text-blue-500 py-1 px-3 rounded-md;
 }
 
 @theme {
