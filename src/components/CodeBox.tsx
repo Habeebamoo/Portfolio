@@ -16,7 +16,7 @@ const CodeBox = () => {
 
       go func() {
         defer wg.Done()
-        fmt.Println("Go's Concurrency Mastered")
+        fmt.Println("Concurrent Program")
       }()
 
       wg.Wait()

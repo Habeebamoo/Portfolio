@@ -53,7 +53,7 @@ const Main = () => {
       </div>
 
       <h1 className="text-accent text-center font-inter text-2xl">What I've Been Up To</h1>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
         <div className="p-5 bg-box border-1 border-border rounded-lg" data-aos="zoom-in">
           <div className="rounded-md overflow-hidden">
             <img src={maildrop1} />
