@@ -30,7 +30,7 @@ const Main = () => {
       <div className="mt-4" data-aos="zoom-in">
         <h1 className="text-accent font-roboto text-3xl text-center">Full-Stack <span className="text-secondary">Developer</span></h1>
       </div>
-      <p className="text-muted text-sm mt-2 text-center sm:w-[400px] mx-auto" data-aos="zoom-in px-2">While crafting premium digital experiences with modern technologies. I enjoy creating fast, secure and reliable solutions</p>
+      <p className="text-muted text-sm mt-2 text-center sm:w-[400px] mx-auto px-2" data-aos="zoom-in">While crafting premium digital experiences with modern technologies. I enjoy creating fast, secure and reliable solutions</p>
       <div className="mt-4 flex-center " data-aos="zoom-in">
         <button className="btn-secondary flex-center gap-2 text-[12px] font-outfit">
           <FaCloudDownloadAlt size={15} />
