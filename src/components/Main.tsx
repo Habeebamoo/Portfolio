@@ -101,7 +101,7 @@ const Main = () => {
       <div className="mt-30">
         <div className="py-8 px-2 rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
           <h1 className="text-accent font-outfit text-lg">About Me</h1>
-          <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a 17 year old software developer from Nigeria who enjoys turning ideas into working applications. With 2+ years hands on experience, i build end-to-end products from designing user expeiences to creating reliable systems behind the scenes.</p>
+          <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a 17 year old software developer from Nigeria who enjoys turning ideas into working applications. With 2+ years hands on experience, i build end-to-end products from designing user experiences to creating reliable systems behind the scenes.</p>
           <p className="text-sm text-muted font-inter mt-3">I'm always learning, experimenting and improving the way i approach problems</p>
         </div>
       </div>
