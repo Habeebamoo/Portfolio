@@ -67,7 +67,7 @@ const Main = () => {
   }
 
   const toResume = () => {
-    window.location.href = "https://drive.google.com/file/d/1_RJoBufJkZkMF6n-GHsIYYGOko2T1Qio/view?usp=drivesdk";
+    window.location.href = "https://drive.google.com/file/d/1_RJoBufJkZkMF6n-GHslYYGOko2T1Qio/view?usp=drivesdk";
   }
 
   const toMailDrop = () => {
