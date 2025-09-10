@@ -66,6 +66,10 @@ const Main = () => {
     }
   }
 
+  const toResume = () => {
+    window.location.href = "https://drive.google.com/file/d/1_RJoBufJkZkMF6n-GHsIYYGOko2T1Qio/view?usp=drivesdk";
+  }
+
   const toMailDrop = () => {
     navigate("/projects/maildrop")
   }
@@ -86,7 +90,7 @@ const Main = () => {
       </div>
       <p className="text-muted text-sm mt-2 text-center sm:w-[400px] mx-auto px-2" data-aos="zoom-in">While crafting premium digital experiences with modern technologies. I enjoy creating fast, secure and reliable solutions</p>
       <div className="mt-4 flex-center " data-aos="zoom-in">
-        <button className="btn-secondary flex-center gap-2 text-[12px] font-outfit">
+        <button onClick={toResume} className="btn-secondary flex-center gap-2 text-[12px] font-outfit">
           <FaCloudDownloadAlt size={15} />
           <span>Download Resume</span>
         </button>
