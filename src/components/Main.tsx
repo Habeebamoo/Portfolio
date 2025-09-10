@@ -10,9 +10,61 @@ import { SiRedux, SiTypescript } from "react-icons/si"
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5"
 import { useNavigate } from "react-router"
 import CodeBox from "./CodeBox"
+import Loading from "./Loading"
+import { useEffect, useState } from "react"
+import Model from "./Model"
 
 const Main = () => {
+  const [model, setModel] = useState<boolean>(false)
+  const [loading, setLoading] = useState<boolean>(false)
+  const [success, setSuccess] = useState<boolean>(false)
+  const [message, setMessage] = useState<string>("Success")
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
   const navigate = useNavigate()
+
+  useEffect(() => {
+    if (model) {
+      setTimeout(() => setModel(false), 3000)
+    }
+  }, [model])
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+
+    try {
+      const res = await fetch("https://contact-go-egvq.onrender.com/api/v1/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": import.meta.env.VITE_X_API_KEY,
+        },
+        body: JSON.stringify(form)
+      })
+
+      const response = await res.json()
+
+      if (res.ok) {
+        setModel(true)
+        setSuccess(true)
+        setMessage(response.message)
+      } else {
+        setModel(true)
+        setSuccess(false)
+        setMessage(response.message)
+      }
+    } catch (err) {
+      setModel(true)
+      setSuccess(false)
+      setMessage("Something went wrong")
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const toMailDrop = () => {
     navigate("/projects/maildrop")
@@ -24,6 +76,8 @@ const Main = () => {
 
   return (
     <main className="bg-primary p-2">
+      {loading && <Loading />}
+      {model && <Model success={success} text={message} />}
       <div className="h-30 w-30 rounded-full overflow-hidden mt-50 mx-auto" data-aos="slide-down">
         <img src={anime} className="h-full w-full object-cover" />
       </div>
@@ -95,7 +149,7 @@ const Main = () => {
           <p className="text-muted font-inter text-sm py-3">I focus on building reliable and scalable backend systems, clean APIs and efficient database management.</p>
           <div className="flex-start gap-2">
             <div className="text-blue-400"><FaGolang size={40} /></div>
-            <div className="text-sky-700"><BiLogoPostgresql size={26} /></div>
+            <div className="text-sky-700"><BiLogoPostgresql size={27} /></div>
           </div>
         </div>
         <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
@@ -111,7 +165,7 @@ const Main = () => {
             <div className="text-blue-400"><RiTailwindCssFill size={26} /></div>
             <div className="text-purple-500"><SiRedux size={22} /></div>
             <div className="text-blue-500"><SiTypescript size={21} /></div>
-            <div className="text-yellow-500"><IoLogoJavascript size={23} /></div>
+            <div className="text-yellow-500"><IoLogoJavascript size={24} /></div>
             <div className="text-orange-500"><FaHtml5 size={25} /></div>
             <div className="text-blue-500"><IoLogoCss3 size={25} /></div>
             <div className="text-orange-500"><FaGitAlt size={25} /></div>
@@ -123,7 +177,7 @@ const Main = () => {
       <div className="p-6 bg-box border-1 border-border rounded-lg w-[90%] md:w-[500px] mx-auto mt-6 mb-20">
         <h1 className="font-inter text-accent text-xl">Send a Message</h1>
         <p className="text-muted font-inter text-sm py-2">I'm always interested in new opportunities and exciting projects. Whether you need a complete website or want to discuss a potential collaboration, I'd love to hear from you</p>
-        <form className="mt-5">
+        <form onSubmit={handleSubmit} className="mt-5">
           <div>
             <label htmlFor="name" className="text-sm text-accent font-inter">Your Name</label>
             <input 
@@ -131,6 +185,9 @@ const Main = () => {
               name="name"
               id="name"
               className="border-1 border-border p-2 rounded-md text-white font-inter mt-1 w-full"
+              value={form.name}
+              onChange={(e) => setForm(prev => ({...prev, name: e.target.value}))}
+              required
             />
           </div>
           <div className="mt-3">
@@ -140,6 +197,9 @@ const Main = () => {
               name="email"
               id="email"
               className="border-1 border-border p-2 rounded-md mt-1 text-white font-inter w-full"
+              value={form.email}
+              onChange={(e) => setForm(prev => ({...prev, email: e.target.value}))}
+              required
             />
           </div>
           <div className="mt-3">
@@ -149,9 +209,12 @@ const Main = () => {
               id="message" 
               rows={4}
               className="border-1 border-border p-2 rounded-md mt-1 w-full resize-none text-white font-inter"
+              value={form.message}
+              onChange={(e) => setForm(prev => ({...prev, message: e.target.value}))}
+              required
             ></textarea>
           </div>
-          <button onClick={() => console.log("me")} className="btn-secondary w-full mt-6 font-outfit">Send Message</button>
+          <button className="btn-secondary w-full mt-6 font-outfit">Send Message</button>
         </form>
       </div>
     </main>
