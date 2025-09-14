@@ -101,7 +101,7 @@ const Main = () => {
       <div className="mt-30">
         <div className="py-8 px-2 rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
           <h1 className="text-accent font-outfit text-lg">About Me</h1>
-          <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a 17 year old software developer from Nigeria who enjoys turning ideas into working applications. With 2+ years hands on experience, i build end-to-end products from designing user experiences to creating reliable systems behind the scenes.</p>
+          <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a 17 year old software developer from Nigeria who enjoys turning ideas into working applications. With 2 years hands on experience, i build end-to-end products from designing user experiences to creating reliable systems behind the scenes.</p>
           <p className="text-sm text-muted font-inter mt-3">I'm always learning, experimenting and improving the way i approach problems</p>
         </div>
       </div>
@@ -120,7 +120,7 @@ const Main = () => {
           <p className="text-muted text-sm font-inter mt-2">
             An Email marketing platform that enables users to manage campaigns, subscribers and send targetted or promotional emails to them
           </p>
-          <button onClick={toMailDrop} className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
+          <button onClick={toMailDrop} className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2">
             <span>View Project</span>
             <SlArrowRight />
           </button>
@@ -134,7 +134,7 @@ const Main = () => {
           <p className="text-muted text-sm font-inter mt-2">
             A Quiz platform that enables users to take quizzes, track progress and get ranked based on thier stats
           </p>
-          <button onClick={toFlashquiz} className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2 mx-auto">
+          <button onClick={toFlashquiz} className="btn-secondary px-4 py-3 mt-4 text-sm flex-center gap-2">
             <span>View Project</span>
             <SlArrowRight />
           </button>

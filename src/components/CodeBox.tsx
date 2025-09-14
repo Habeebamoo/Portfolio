@@ -20,6 +20,7 @@ const CodeBox = () => {
       }()
 
       wg.Wait()
+      fmt.Println("All Done")
     }
   `;
 
@@ -35,8 +36,8 @@ const CodeBox = () => {
   }, [])
 
   return (
-    <section>
-      <div className="bg-box border-2 border-border rounded-md w-[75%] md:w-[300px] mx-auto mt-30 pb-2">
+    <section className="mt-30 min-h-[400px]">
+      <div className="bg-box border-2 border-border rounded-md w-[75%] md:w-[300px] mx-auto pb-2">
         <div className="flex-start gap-2 pl-4 mb-4 bg-border py-3">
           <div className="h-3 w-3 rounded-full bg-blue-500"></div>
           <div className="h-3 w-3 rounded-full bg-yellow-500"></div>

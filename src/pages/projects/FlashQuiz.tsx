@@ -64,17 +64,17 @@ const FlashQuiz = () => {
       </div>
 
       <div className=" mt-10 mb-30 flex-center flex-col">
-        <div className="bg-box p-4 border-1 border-border rounded-lg w-[95%] md:w-[400px]">
+        <div className="bg-box p-3 border-1 border-border rounded-lg w-[95%] md:w-[400px]">
           <img src={img1} className="rounded-md" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 mx-auto w-[95%] lg:w-[700px]">
-          <div className="bg-box p-4 border-1 border-border rounded-lg">
+          <div className="bg-box p-3 border-1 border-border rounded-lg">
             <img src={img2} className="rounded-md" />
           </div>
-          <div className="bg-box p-4 border-1 border-border rounded-lg">
+          <div className="bg-box p-3 border-1 border-border rounded-lg">
             <img src={img3} className="rounded-md" />
           </div>
-          <div className="bg-box p-4 border-1 border-border rounded-lg">
+          <div className="bg-box p-3 border-1 border-border rounded-lg">
             <img src={img4} className="rounded-md" />
           </div>
         </div>
