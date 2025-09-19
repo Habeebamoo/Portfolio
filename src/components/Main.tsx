@@ -1,4 +1,4 @@
-import { FaArrowDown, FaCloudDownloadAlt, FaCode, FaDatabase, FaGitAlt, FaHtml5, FaReact } from "react-icons/fa"
+import { FaArrowDown, FaCloudDownloadAlt, FaCode, FaDatabase, FaGitAlt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa"
 import anime from "../assets/anime.jpeg"
 import maildrop1 from "../assets/maildrop-img1.png"
 import flashquiz1 from "../assets/flash-img1.png"
@@ -8,7 +8,6 @@ import { BiLogoPostgresql } from "react-icons/bi"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiRedux, SiTypescript } from "react-icons/si"
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5"
-import { useNavigate } from "react-router"
 import CodeBox from "./CodeBox"
 import Loading from "./Loading"
 import { useEffect, useState } from "react"
@@ -26,7 +25,6 @@ const Main = () => {
     receiverEmail: "alexjohnson99.uk@gmail.com",
     subject: "Portfolio Contact"
   })
-  const navigate = useNavigate()
 
   useEffect(() => {
     if (model) {
@@ -50,15 +48,10 @@ const Main = () => {
 
       const response = await res.json()
 
-      if (res.ok) {
-        setModel(true)
-        setSuccess(true)
-        setMessage(response.message)
-      } else {
-        setModel(true)
-        setSuccess(false)
-        setMessage(response.message)
-      }
+      setModel(true)
+      setSuccess(res.ok)
+      setMessage(response.message)
+      
     } catch (err) {
       setModel(true)
       setSuccess(false)
@@ -73,12 +66,14 @@ const Main = () => {
   }
 
   const toMailDrop = () => {
-    navigate("/projects/maildrop")
+    window.location.href = "/projects/maildrop"
   }
 
   const toFlashquiz = () => {
-    navigate("/projects/flashquiz")
+    window.location.href = "/projects/flashquiz"
   }
+
+  const myAge = (new Date().getFullYear()) - 2008
 
   return (
     <main className="bg-primary p-2">
@@ -88,7 +83,7 @@ const Main = () => {
         <img src={anime} className="h-full w-full object-cover" />
       </div>
       <div className="mt-4" data-aos="zoom-in">
-        <h1 className="text-accent font-roboto text-3xl text-center">Full-Stack <span className="text-secondary">Developer</span></h1>
+        <h1 className="text-accent font-roboto text-3xl text-center">FullStack <span className="text-secondary">Developer</span></h1>
       </div>
       <p className="text-muted text-sm mt-2 text-center sm:w-[400px] mx-auto px-2" data-aos="zoom-in">While crafting premium digital experiences with modern technologies. I enjoy creating fast, secure and reliable solutions</p>
       <div className="mt-4 flex-center " data-aos="zoom-in">
@@ -103,8 +98,8 @@ const Main = () => {
       <div className="mt-30">
         <div className="py-8 px-2 rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
           <h1 className="text-accent font-outfit text-lg">About Me</h1>
-          <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a 17 year old software developer from Nigeria who enjoys turning ideas into working applications. With 2 years hands on experience, i build end-to-end products from designing user experiences to creating reliable systems behind the scenes.</p>
-          <p className="text-sm text-muted font-inter mt-3">I'm always learning, experimenting and improving the way i approach problems</p>
+          <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a {myAge} year old software developer from Nigeria who enjoys turning ideas into working applications. With 2 years hands on experience, i build end-to-end products from designing user experiences to creating reliable systems behind the scenes.</p>
+          <p className="text-sm text-muted font-inter mt-3">Over the past few years, i have built a curiosity for systems & infrastructure pushing me to continous learning, experimentation and improving the way i approach problems</p>
         </div>
       </div>
 
@@ -114,7 +109,7 @@ const Main = () => {
 
       <h1 className="text-accent text-center font-inter text-2xl">What I've Been Up To</h1>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
-        <div className="p-5 bg-box border-1 border-border rounded-lg" data-aos="zoom-in">
+        <div className="p-5 bg-box border-1 border-border rounded-lg" data-aos="fade-up">
           <div className="rounded-md overflow-hidden">
             <img src={maildrop1} />
           </div>
@@ -128,7 +123,7 @@ const Main = () => {
           </button>
         </div>
 
-        <div className="p-5 bg-box border-1 border-border rounded-lg" data-aos="zoom-in">
+        <div className="p-5 bg-box border-1 border-border rounded-lg" data-aos="fade-up">
           <div className="rounded-md overflow-hidden">
             <img src={flashquiz1} />
           </div>
@@ -145,7 +140,7 @@ const Main = () => {
 
       <h1 className="text-accent text-center font-inter text-2xl mt-30">My Skills</h1>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
-        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
+        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="fade-up">
           <div className="flex-start gap-2">
             <div className="text-secondary">
               <FaDatabase size={18} />
@@ -155,17 +150,18 @@ const Main = () => {
           <p className="text-muted font-inter text-sm py-3">I focus on building reliable and scalable backend systems, clean APIs and efficient database management.</p>
           <div className="flex-start gap-2">
             <div className="text-blue-400"><FaGolang size={40} /></div>
+            <div className="text-green-500"><FaNodeJs size={24} /></div>
             <div className="text-sky-700"><BiLogoPostgresql size={27} /></div>
           </div>
         </div>
-        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="zoom-in">
+        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="fade-up">
           <div className="flex-start gap-2">
             <div className="text-secondary">
               <FaCode size={21} />
             </div>
             <h1 className="font-inter text-xl text-accent">Frontend Developement</h1>
           </div>
-          <p className="text-muted font-inter text-sm py-3">I build simple, responsive and user-friendly interfaces that works smoothly accross devices</p>
+          <p className="text-muted font-inter text-sm py-3">I build simple, responsive and user-friendly web interfaces that works smoothly accross devices</p>
           <div className="flex-start gap-3 mt-1">
             <div className="text-blue-400"><FaReact size={22} /></div>
             <div className="text-blue-400"><RiTailwindCssFill size={26} /></div>

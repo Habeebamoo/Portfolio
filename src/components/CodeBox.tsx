@@ -7,20 +7,10 @@ const CodeBox = () => {
 
     import (
       "fmt"
-      "sync"
     )
 
     func main() {
-      var wg sync.WaitGroup
-      wg.Add(1)
-
-      go func() {
-        defer wg.Done()
-        fmt.Println("Concurrent Program")
-      }()
-
-      wg.Wait()
-      fmt.Println("All Done")
+      fmt.Println("Welcome To My Portfolio")
     }
   `;
 
@@ -36,7 +26,7 @@ const CodeBox = () => {
   }, [])
 
   return (
-    <section className="mt-30 min-h-[400px]">
+    <section className="mt-30 min-h-[235px] flex-center">
       <div className="bg-box border-2 border-border rounded-md w-[75%] md:w-[300px] mx-auto pb-2">
         <div className="flex-start gap-2 pl-4 mb-4 bg-border py-3">
           <div className="h-3 w-3 rounded-full bg-blue-500"></div>
