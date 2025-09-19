@@ -20,9 +20,11 @@ const Main = () => {
   const [success, setSuccess] = useState<boolean>(false)
   const [message, setMessage] = useState<string>("Success")
   const [form, setForm] = useState({
-    name: "",
-    email: "",
+    senderName: "",
+    senderEmail: "",
     message: "",
+    receiverEmail: "alexjohnson99.uk@gmail.com",
+    subject: "Portfolio Contact"
   })
   const navigate = useNavigate()
 
@@ -189,8 +191,8 @@ const Main = () => {
               name="name"
               id="name"
               className="border-1 border-border p-2 rounded-md text-white font-inter mt-1 w-full"
-              value={form.name}
-              onChange={(e) => setForm(prev => ({...prev, name: e.target.value}))}
+              value={form.senderName}
+              onChange={(e) => setForm(prev => ({...prev, senderName: e.target.value}))}
               required
             />
           </div>
@@ -201,8 +203,8 @@ const Main = () => {
               name="email"
               id="email"
               className="border-1 border-border p-2 rounded-md mt-1 text-white font-inter w-full"
-              value={form.email}
-              onChange={(e) => setForm(prev => ({...prev, email: e.target.value}))}
+              value={form.senderEmail}
+              onChange={(e) => setForm(prev => ({...prev, senderEmail: e.target.value}))}
               required
             />
           </div>
