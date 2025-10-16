@@ -34,7 +34,7 @@ const CodeBox = () => {
           <div className="h-3 w-3 rounded-full bg-green-500"></div>
         </div>
         <pre className="text-[10px] text-accent">
-          <code>{text}|</code>
+          <code>{text}<span className="text-blue-400">|</span></code>
         </pre>
       </div>
     </section>

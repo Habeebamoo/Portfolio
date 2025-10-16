@@ -6,6 +6,8 @@ import img3 from "../../assets/maildrop-img3.png"
 import img4 from "../../assets/maildrop-img4.png"
 import { useNavigate } from "react-router"
 import { FaExternalLinkAlt } from "react-icons/fa"
+import { PiNumberOneBold } from "react-icons/pi"
+import { FaGear } from "react-icons/fa6"
 
 const MailDrop = () => {
   const navigate = useNavigate()
@@ -63,6 +65,19 @@ const MailDrop = () => {
           <div className="btn-lang">GORM</div>
           <div className="btn-lang">PostgreSQL</div>
         </div>
+      </div>
+
+      <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
+        <h1 className="text-accent font-inter">Challenges</h1>
+        <div className="mt-4">
+          <PiNumberOneBold color="#1995e7ff" size={20} />
+          <p className="text-muted text-sm font-inter mt-2">Sending bulk promotional emails to subscribers without delaying API response and user experience (UX)</p>
+        </div>
+        <div className="text-blue-400 flex-start mt-4 gap-1">
+          <FaGear />
+          <p className="font-roboto">Solution</p>
+        </div>
+        <p className="text-muted text-sm font-inter mt-2">Utilized Concurrency (Goroutines & Worker Pools) to implement a fan-out fan-in pattern to acheive parallel email processing</p>
       </div>
 
       <div className=" mt-10 mb-30 flex-center flex-col">
