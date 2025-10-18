@@ -1,4 +1,4 @@
-import { BsGithub } from "react-icons/bs"
+import { BsGithub, BsMailbox } from "react-icons/bs"
 import { SlArrowLeft } from "react-icons/sl"
 import img1 from "../../assets/maildrop-img1.png"
 import img2 from "../../assets/maildrop-img2.png"
@@ -6,7 +6,6 @@ import img3 from "../../assets/maildrop-img3.png"
 import img4 from "../../assets/maildrop-img4.png"
 import { useNavigate } from "react-router"
 import { FaExternalLinkAlt } from "react-icons/fa"
-import { PiNumberOneBold } from "react-icons/pi"
 import { FaGear } from "react-icons/fa6"
 
 const MailDrop = () => {
@@ -70,7 +69,7 @@ const MailDrop = () => {
       <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
         <h1 className="text-accent font-inter">Challenges</h1>
         <div className="mt-4">
-          <PiNumberOneBold color="#1995e7ff" size={20} />
+          <BsMailbox color="#1995e7ff" size={20} />
           <p className="text-muted text-sm font-inter mt-2">Sending bulk promotional emails to subscribers without delaying API response and user experience (UX)</p>
         </div>
         <div className="text-blue-400 flex-start mt-4 gap-1">

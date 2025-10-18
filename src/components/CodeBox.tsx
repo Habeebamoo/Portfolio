@@ -10,7 +10,7 @@ const CodeBox = () => {
     )
 
     func main() {
-      fmt.Println("Welcome To My Portfolio")
+      fmt.Println("Welcome Lad.")
     }
   `;
 
