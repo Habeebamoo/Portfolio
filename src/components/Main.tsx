@@ -141,7 +141,7 @@ const Main = () => {
             <MdDevices size={40} />
           </div>
           <h1 className="font-inter text-xl text-accent text-center mt-2">Frontend</h1>
-          <p className="text-blue-400 font-outfit text-sm mt-1 text-center">React, TypeScript, JavaScript, TailwindCSS</p>
+          <p className="text-blue-400 font-outfit text-sm mt-1 text-center">React, Redux, TypeScript, JavaScript, TailwindCSS</p>
           <p className="text-muted text-sm mt-2 text-center font-inter">I build responsive and user-friendly websites and applications</p>
         </div>
 
@@ -151,7 +151,7 @@ const Main = () => {
             <CiServer size={40} />
           </div>
           <h1 className="font-inter text-xl text-accent text-center mt-2">Backend</h1>
-          <p className="text-blue-400 font-outfit text-sm mt-1 text-center">Golang, Node.js, PostgreSQL</p>
+          <p className="text-blue-400 font-outfit text-sm mt-1 text-center">Golang, Node.js, Express.js, PostgreSQL</p>
           <p className="text-muted text-sm mt-2 text-center font-inter">I also build scalable backend systems, clean APIs and efficient database management</p>
         </div>      
       </div>
