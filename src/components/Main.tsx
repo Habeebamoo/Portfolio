@@ -1,13 +1,8 @@
-import { FaArrowDown, FaCloudDownloadAlt, FaGitAlt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa"
+import { FaArrowDown, FaCloudDownloadAlt } from "react-icons/fa"
 import anime from "../assets/anime.jpeg"
 import maildrop1 from "../assets/maildrop-img1.png"
 import flashquiz1 from "../assets/flash-img1.png"
 import { SlArrowRight } from "react-icons/sl"
-import { FaGolang } from "react-icons/fa6"
-import { BiLogoPostgresql } from "react-icons/bi"
-import { RiTailwindCssFill } from "react-icons/ri"
-import { SiExpress, SiRedux, SiTypescript } from "react-icons/si"
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5"
 import CodeBox from "./CodeBox"
 import Loading from "./Loading"
 import { useEffect, useState } from "react"
@@ -141,39 +136,23 @@ const Main = () => {
       <h1 className="text-accent text-center font-inter text-2xl mt-30">My Skills</h1>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
         {/* Frontend */}
-        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="fade-up">
+        <div className="bg-box border-1 border-border px-6 py-4 rounded-lg" data-aos="fade-up">
           <div className="text-secondary flex-center">
             <MdDevices size={40} />
           </div>
-          <h1 className="font-inter text-xl text-accent text-center mt-2">Frontend Developement</h1>
-          <p className="text-muted font-inter text-sm mt-1 text-center">I build simple, responsive and user-friendly websites and web apps that works smoothly accross devices</p>
-
-          <div className="flex-center gap-3 mt-4">            
-            <div className="text-blue-400"><FaReact size={22} /></div>
-            <div className="text-blue-400"><RiTailwindCssFill size={26} /></div>
-            <div className="text-purple-500"><SiRedux size={22} /></div>
-            <div className="text-blue-500"><SiTypescript size={21} /></div>
-            <div className="text-yellow-500"><IoLogoJavascript size={24} /></div>
-            <div className="text-orange-500"><FaHtml5 size={25} /></div>
-            <div className="text-blue-500"><IoLogoCss3 size={25} /></div>
-            <div className="text-orange-500"><FaGitAlt size={25} /></div>
-          </div>
+          <h1 className="font-inter text-xl text-accent text-center mt-2">Frontend</h1>
+          <p className="text-blue-400 font-outfit text-sm mt-1 text-center">React, TypeScript, JavaScript, TailwindCSS</p>
+          <p className="text-muted text-sm mt-2 text-center font-inter">I build responsive and user-friendly websites and applications</p>
         </div>
 
         {/* Backend */}
-        <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="fade-up">
+        <div className="bg-box border-1 border-border px-6 py-4 rounded-lg" data-aos="fade-up">
           <div className="text-secondary flex-center">
             <CiServer size={40} />
           </div>
-          <h1 className="font-inter text-xl text-accent text-center mt-2">Backend Developement</h1>
-          <p className="text-muted font-inter text-sm mt-1 text-center">I also build reliable and scalable backend systems, clean APIs and efficient database management.</p>
-
-          <div className="flex-center gap-3 mt-4">            
-            <div className="text-blue-400"><FaGolang size={40} /></div>
-            <div className="text-green-500"><FaNodeJs size={24} /></div>
-            <div className="text-white"><SiExpress size={24} /></div>
-            <div className="text-sky-700"><BiLogoPostgresql size={27} /></div>
-          </div>
+          <h1 className="font-inter text-xl text-accent text-center mt-2">Backend</h1>
+          <p className="text-blue-400 font-outfit text-sm mt-1 text-center">Golang, Node.js, PostgreSQL</p>
+          <p className="text-muted text-sm mt-2 text-center font-inter">I also build scalable backend systems, clean APIs and efficient database management</p>
         </div>      
       </div>
 

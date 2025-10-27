@@ -33,7 +33,7 @@ const FlashQuiz = () => {
         <p className="text-muted text-sm font-inter mt-2">Quiz Website</p>
       </div>
 
-      <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
+      <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-8">
         {/* Details */}
         <h1 className="font-inter text-accent">Project Details</h1>
         <p className="text-sm text-muted font-inter mt-4">
@@ -55,7 +55,7 @@ const FlashQuiz = () => {
         </div>
       </div>
 
-      <div className="flex-center gap-3 mt-8">
+      <div className="flex-center gap-3 mt-12">
         <button onClick={viewLive} className="btn-secondary text-sm font-outfit flex-center gap-2">
           <FaExternalLinkAlt size={12} />
           <span>View Live</span>
