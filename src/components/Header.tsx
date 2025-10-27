@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 p-6 z-10">
       <div className="flex-center">
-        <div className="bg-box/95 border-2 border-border shadow-lg flex-center py-4 px-6 rounded-lg gap-6 gap-4 text-muted">
+        <div className="backdrop-blur-md bg-box/80 border-2 border-border shadow-lg flex-center py-4 px-6 rounded-lg gap-6 gap-8 text-muted">
           <div onClick={toGitHub}>
             <FaGithub size={20} />
           </div>

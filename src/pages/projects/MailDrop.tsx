@@ -32,38 +32,37 @@ const MailDrop = () => {
         </button>
         <h1 className="text-accent font-inter text-2xl mt-4">MailDrop</h1>
         <p className="text-muted text-sm font-inter mt-2">Email Marketing Platform</p>
-        <div className="flex-start gap-3 mt-4">
-          <button onClick={viewLive} className="btn-secondary text-sm font-outfit flex-center gap-2">
-            <FaExternalLinkAlt size={12} />
-            <span>View Live</span>
-          </button>
-          <button onClick={viewRepo} className="btn-primary text-sm font-outfit flex-center gap-2">
-            <BsGithub />
-            <span>View Code</span>
-          </button>
-        </div>
       </div>
 
       <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
+        {/* Details */}
         <h1 className="font-inter text-accent">Project Details</h1>
         <p className="text-sm text-muted font-inter mt-4">
           MailDrop is a simple and powerful email marketing platform that enable users to create campaigns, manage subscribers, track engagements, and connect with them by sending promotional emails.
         </p>
-        <p className="text-sm text-muted font-inter mt-4">
-          The platform supports Third parties login (Google), Other security featues inclued JWT Authentication, Rate Limiting, Making it secure and reliable for users.
-        </p>
+
+        {/* Technologies */}
+        <div className="mt-8">
+          <h1 className="text-accent font-inter">Technologies Used</h1>
+          <div className="text-sm flex-start flex-wrap mt-4 gap-2">
+            <div className="btn-lang">React.js</div>
+            <div className="btn-lang">TypeScript</div>
+            <div className="btn-lang">Golang</div>
+            <div className="btn-lang">Gin Framework</div>
+            <div className="btn-lang">PostgreSQL</div>
+          </div>
+        </div>
       </div>
 
-      <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
-        <h1 className="text-accent font-inter">Technologies Used</h1>
-        <div className="text-sm flex-start flex-wrap mt-4 gap-2">
-          <div className="btn-lang">React.js</div>
-          <div className="btn-lang">TailwindCSS</div>
-          <div className="btn-lang">Go</div>
-          <div className="btn-lang">Gin Framework</div>
-          <div className="btn-lang">GORM</div>
-          <div className="btn-lang">PostgreSQL</div>
-        </div>
+      <div className="flex-center gap-3 mt-8">
+        <button onClick={viewLive} className="btn-secondary text-sm font-outfit flex-center gap-2">
+          <FaExternalLinkAlt size={12} />
+          <span>View Live</span>
+        </button>
+        <button onClick={viewRepo} className="btn-primary text-sm font-outfit flex-center gap-2">
+          <BsGithub />
+          <span>View Code</span>
+        </button>
       </div>
 
       <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">

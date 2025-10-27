@@ -30,20 +30,11 @@ const FlashQuiz = () => {
           <span>Back to Projects</span>
         </button>
         <h1 className="text-accent font-inter text-2xl mt-4">FlashQuiz</h1>
-        <p className="text-muted text-sm font-inter mt-2">Quiz Web App</p>
-        <div className="flex-start gap-3 mt-4">
-          <button onClick={viewLive} className="btn-secondary text-sm font-outfit flex-center gap-2">
-            <FaExternalLinkAlt size={12} />
-            <span>View Live</span>
-          </button>
-          <button onClick={viewRepo} className="btn-primary text-sm font-outfit flex-center gap-2">
-            <BsGithub />
-            <span>View Code</span>
-          </button>
-        </div>
+        <p className="text-muted text-sm font-inter mt-2">Quiz Website</p>
       </div>
 
       <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
+        {/* Details */}
         <h1 className="font-inter text-accent">Project Details</h1>
         <p className="text-sm text-muted font-inter mt-4">
           Flashquiz is a simple Quiz platform that users interact with to take quizzes, track progress and get ranked based on thier statistics & progress
@@ -51,16 +42,28 @@ const FlashQuiz = () => {
         <p className="text-sm text-muted font-inter mt-4">
           The Platform is fully packed, supporting other features like login/signup system, reset password and user verification system.
         </p>
+
+        {/* Technologies */}
+        <div className="mt-8">
+          <h1 className="text-accent font-inter">Technologies Used</h1>
+          <div className="text-sm flex-start flex-wrap mt-4 gap-2">
+            <div className="btn-lang">React.js</div>
+            <div className="btn-lang">TypeScript</div>
+            <div className="btn-lang">Golang</div>
+            <div className="btn-lang">PostgreSQL</div>
+          </div>
+        </div>
       </div>
 
-      <div className="bg-box border-1 border-border p-6 rounded-md w-[95%] md:w-[400px] mx-auto mt-10">
-        <h1 className="text-accent font-inter">Technologies Used</h1>
-        <div className="text-sm flex-start flex-wrap mt-4 gap-2">
-          <div className="btn-lang">React.js</div>
-          <div className="btn-lang">TailwindCSS</div>
-          <div className="btn-lang">Go</div>
-          <div className="btn-lang">PostgreSQL</div>
-        </div>
+      <div className="flex-center gap-3 mt-8">
+        <button onClick={viewLive} className="btn-secondary text-sm font-outfit flex-center gap-2">
+          <FaExternalLinkAlt size={12} />
+          <span>View Live</span>
+        </button>
+        <button onClick={viewRepo} className="btn-primary text-sm font-outfit flex-center gap-2">
+          <BsGithub />
+          <span>View Code</span>
+        </button>
       </div>
 
       <div className=" mt-10 mb-30 flex-center flex-col">

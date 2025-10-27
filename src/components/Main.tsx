@@ -1,4 +1,4 @@
-import { FaArrowDown, FaCloudDownloadAlt, FaCode, FaDatabase, FaGitAlt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa"
+import { FaArrowDown, FaCloudDownloadAlt, FaGitAlt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa"
 import anime from "../assets/anime.jpeg"
 import maildrop1 from "../assets/maildrop-img1.png"
 import flashquiz1 from "../assets/flash-img1.png"
@@ -6,12 +6,14 @@ import { SlArrowRight } from "react-icons/sl"
 import { FaGolang } from "react-icons/fa6"
 import { BiLogoPostgresql } from "react-icons/bi"
 import { RiTailwindCssFill } from "react-icons/ri"
-import { SiRedux, SiTypescript } from "react-icons/si"
+import { SiExpress, SiRedux, SiTypescript } from "react-icons/si"
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5"
 import CodeBox from "./CodeBox"
 import Loading from "./Loading"
 import { useEffect, useState } from "react"
 import Model from "./Model"
+import { MdDevices } from "react-icons/md"
+import { CiServer } from "react-icons/ci"
 
 const Main = () => {
   const [model, setModel] = useState<boolean>(false)
@@ -37,7 +39,7 @@ const Main = () => {
     setLoading(true)
 
     try {
-      const res = await fetch("https://contact-go-egvq.onrender.com/api/v1/contact", {
+      const res = await fetch("https://contact-app-ea1p.onrender.com/api/v1/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -95,7 +97,7 @@ const Main = () => {
 
       <div className="mt-30">
         <div className="py-8 px-2 rounded-md w-[90%] md:w-[500px] mx-auto" data-aos="slide-up">
-          <h1 className="text-accent font-outfit text-lg">About Me</h1>
+          <h1 className="text-accent font-outfit text-xl">About Me</h1>
           <p className="text-sm text-muted font-inter mt-4">I'm Habeeb Amoo, a software developer from Nigeria who enjoys turning ideas into working applications. With 2 years hands on experience, i build end-to-end products from designing user experiences to creating reliable systems behind the scenes.</p>
           <p className="text-sm text-muted font-inter mt-3">Over the past few years, i have built a curiosity for systems & infrastructure pushing me to continous learning, experimentation and improving the way i approach problems</p>
         </div>
@@ -138,15 +140,15 @@ const Main = () => {
 
       <h1 className="text-accent text-center font-inter text-2xl mt-30">My Skills</h1>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] md:w-[700px] lg:w-[800px] mx-auto">
+        {/* Frontend */}
         <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="fade-up">
-          <div className="flex-start gap-2">
-            <div className="text-secondary">
-              <FaCode size={21} />
-            </div>
-            <h1 className="font-inter text-xl text-accent">Frontend Developement</h1>
+          <div className="text-secondary flex-center">
+            <MdDevices size={40} />
           </div>
-          <p className="text-muted font-inter text-sm py-4">I build simple, responsive and user-friendly websites and web apps that works smoothly accross devices</p>
-          <div className="flex-start gap-3 mt-1">
+          <h1 className="font-inter text-xl text-accent text-center mt-2">Frontend Developement</h1>
+          <p className="text-muted font-inter text-sm mt-1 text-center">I build simple, responsive and user-friendly websites and web apps that works smoothly accross devices</p>
+
+          <div className="flex-center gap-3 mt-4">            
             <div className="text-blue-400"><FaReact size={22} /></div>
             <div className="text-blue-400"><RiTailwindCssFill size={26} /></div>
             <div className="text-purple-500"><SiRedux size={22} /></div>
@@ -157,24 +159,26 @@ const Main = () => {
             <div className="text-orange-500"><FaGitAlt size={25} /></div>
           </div>
         </div>
+
+        {/* Backend */}
         <div className="bg-box border-1 border-border p-4 rounded-lg" data-aos="fade-up">
-          <div className="flex-start gap-2">
-            <div className="text-secondary">
-              <FaDatabase size={18} />
-            </div>
-            <h1 className="font-inter text-xl text-accent">Backend Developement</h1>
+          <div className="text-secondary flex-center">
+            <CiServer size={40} />
           </div>
-          <p className="text-muted font-inter text-sm py-3">I also build reliable and scalable backend systems, clean APIs and efficient database management.</p>
-          <div className="flex-start gap-2">
+          <h1 className="font-inter text-xl text-accent text-center mt-2">Backend Developement</h1>
+          <p className="text-muted font-inter text-sm mt-1 text-center">I also build reliable and scalable backend systems, clean APIs and efficient database management.</p>
+
+          <div className="flex-center gap-3 mt-4">            
             <div className="text-blue-400"><FaGolang size={40} /></div>
             <div className="text-green-500"><FaNodeJs size={24} /></div>
+            <div className="text-white"><SiExpress size={24} /></div>
             <div className="text-sky-700"><BiLogoPostgresql size={27} /></div>
           </div>
         </div>      
       </div>
 
       <h1 className="text-accent text-center font-inter text-2xl mt-30">Let's Work Together</h1>
-      <div className="p-6 bg-box border-1 border-border rounded-lg w-[90%] md:w-[500px] mx-auto mt-6 mb-20">
+      <div className="p-6 bg-box border-1 border-border rounded-lg w-[90%] sm:w-[400px] mx-auto mt-6 mb-20">
         <h1 className="font-inter text-accent text-xl">Send a Message</h1>
         <p className="text-muted font-inter text-sm py-2">I'm always interested in new opportunities and exciting projects. Whether you need a complete website or want to discuss a potential collaboration, I'd love to hear from you</p>
         <form onSubmit={handleSubmit} className="mt-5">
