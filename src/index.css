@@ -30,8 +30,14 @@
   @apply flex justify-around items-center;
 }
 
+.t {
+  color: rgb(114, 114, 116);
+}
+
 @theme {
   --color-accent: rgb(250, 250, 250);
+  --color-mutedLg: rgb(217, 219, 221);
+  --color-muted: rgb(114, 114, 116);
   --font-spaceG: "spaceG";
   --font-inter: "inter";
 }
