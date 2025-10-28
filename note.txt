@@ -1,4 +1,18 @@
-const Loading = () => {
+  const toGitHub = () => {
+    window.location.href = "https://github.com/Habeebamoo"
+  }
+
+  const toLinkedIn = () => {
+    window.location.href = "https://linkedin.com/in/habeeb-amoo-2a5787380"
+  }
+
+  const toTwitter = () => {
+    window.location.href = "https://x.com/Habeeb_O_Amoo"
+  }
+
+
+
+  const Loading = () => {
   return (
     <section className="fixed top-0 left-0 bottom-0 right-0 bg-primary flex-center z-30">
       <div className="flex-center">
@@ -14,3 +28,25 @@ const Loading = () => {
 }
 
 export default Loading
+
+
+"https://drive.google.com/file/d/1_RJoBufJkZkMF6n-GHslYYGOko2T1Qio/view?usp=drivesdk";
+  https://contact-app-ea1p.onrender.com/api/v1/contact
+
+
+
+
+  import { useEffect } from "react";
+import { useLocation } from "react-router"
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
+
+  return null;
+}
+
+export default ScrollToTop
