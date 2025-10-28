@@ -30,8 +30,17 @@
   @apply flex justify-around items-center;
 }
 
-.t {
-  color: rgb(114, 114, 116);
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 8s linear forwards infinite;
 }
 
 @theme {
