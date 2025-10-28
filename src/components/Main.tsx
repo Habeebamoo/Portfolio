@@ -5,8 +5,8 @@ import { FaGolang } from "react-icons/fa6"
 import { BiLogoJavascript, BiLogoPostgresql, } from "react-icons/bi"
 import { SiTypescript } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
-import { LiaLinkedin, LiaNodeJs } from "react-icons/lia"
-import { BsGithub, BsLinkedin, BsSend, BsTwitterX } from "react-icons/bs"
+import { LiaNodeJs } from "react-icons/lia"
+import { BsSend } from "react-icons/bs"
 
 const Main = () => {
   return (
@@ -65,7 +65,7 @@ const Main = () => {
       </section>
 
       {/* Contact */}
-      <section className="mt-20 w-[85%] md:w-[400px] mx-auto">
+      <section className="mt-20 mb-15 w-[85%] md:w-[400px] mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         <p className="text-muted text-center font-spaceG text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
         <form className="mt-6">
@@ -86,19 +86,6 @@ const Main = () => {
             <BsSend />
           </button>
         </form>      
-      </section>
-
-      {/* Profiles */}
-      <section className="mt-20 mb-20 flex-center gap-4">
-        <div>
-          <BsGithub size={30} />
-        </div>
-        <div>
-          <BsTwitterX size={27} />
-        </div>
-        <div>
-          <BsLinkedin size={27} />
-        </div>
       </section>
     </>
   )
