@@ -2,12 +2,11 @@ import ProjectDisplay from "./ProjectDisplay"
 import maildropImg from "../assets/maildrop-img1.png"
 import flashquizImg from "../assets/flash-img1.png"
 import { FaGolang } from "react-icons/fa6"
-import { DiJavascript, DiNodejs, DiPostgresql } from "react-icons/di"
-import { MdJavascript } from "react-icons/md"
-import { BiLogoJavascript, BiLogoPostgresql } from "react-icons/bi"
-import { SiPostgresql, SiTypescript } from "react-icons/si"
-import { FaNodeJs, FaReact } from "react-icons/fa"
-import { LiaNodeJs } from "react-icons/lia"
+import { BiLogoJavascript, BiLogoPostgresql, } from "react-icons/bi"
+import { SiTypescript } from "react-icons/si"
+import { FaReact } from "react-icons/fa"
+import { LiaLinkedin, LiaNodeJs } from "react-icons/lia"
+import { BsGithub, BsLinkedin, BsSend, BsTwitterX } from "react-icons/bs"
 
 const Main = () => {
   return (
@@ -28,7 +27,7 @@ const Main = () => {
 
       {/* Projects */}
       <section className="mt-30 w-[90%] md:w-[800px] mx-auto">
-        <h1 className="font-inter font-bold text-xl text-center mb-10">What I've Been Up To.</h1>
+        <h1 className="font-inter font-bold text-xl text-center mb-10">Some Of My Projects.</h1>
 
         {/* display */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -46,7 +45,7 @@ const Main = () => {
       </section>
 
       {/* Tech Stack */}
-      <section className="mt-30 mb-30 w-[90%] md:w-[400px] mx-auto">
+      <section className="mt-30 w-[90%] md:w-[400px] mx-auto">
         <h1 className="font-inter font-bold text-xl text-center mb-7">Technologies.</h1>   
 
         <div className="relative overflow-hidden w-[300px] rounded-3xl mx-auto p-5">
@@ -65,6 +64,42 @@ const Main = () => {
         </div>
       </section>
 
+      {/* Contact */}
+      <section className="mt-20 w-[85%] md:w-[400px] mx-auto">
+        <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
+        <p className="text-muted text-center font-spaceG text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
+        <form className="mt-6">
+          <div>
+            <label htmlFor="name" className="font-spaceG">Name</label>
+            <input type="text" className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" />
+          </div>
+          <div className="mt-4">
+            <label htmlFor="email" className="font-spaceG">Email</label>
+            <input type="email" className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" />
+          </div>
+          <div className="mt-4">
+            <label htmlFor="message" className="font-spaceG">Message</label>
+            <textarea rows={4} className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none resize-none"></textarea>
+          </div>
+          <button className="bg-purple-900 border-1 border-purple-900 w-full p-2 rounded-md mt-4 text-white font-spaceG cursor-pointer hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900 flex-center gap-2">
+            <span>Send Message</span>
+            <BsSend />
+          </button>
+        </form>      
+      </section>
+
+      {/* Profiles */}
+      <section className="mt-20 mb-20 flex-center gap-4">
+        <div>
+          <BsGithub size={30} />
+        </div>
+        <div>
+          <BsTwitterX size={27} />
+        </div>
+        <div>
+          <BsLinkedin size={27} />
+        </div>
+      </section>
     </>
   )
 }
