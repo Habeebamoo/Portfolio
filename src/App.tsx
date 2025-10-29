@@ -11,6 +11,7 @@ import { useEffect } from "react"
 import Home from "./pages/Home"
 import ProjectLayout from "./layouts/ProjectLayout"
 import MailDrop from "./pages/projects/MailDrop"
+import Flashquiz from "./pages/projects/Flashquiz"
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<ProjectLayout />}>
           <Route path="maildrop" element={<MailDrop />} />
+          <Route path="flashquiz" element={<Flashquiz />} />
         </Route>
         <Route path="*" element={<Home />} />
       </>
