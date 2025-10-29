@@ -58,7 +58,7 @@ const Main = () => {
 
     } catch (error) {
       setModal(true)
-      setModalStatus("success")
+      setModalStatus("error")
       setModalMsg("Something went wrong.")
 
     } finally {
