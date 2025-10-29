@@ -13,9 +13,10 @@ const Hero = () => {
         <img src={avatar} className="h-full w-full object-cover" />
       </div>
       <div className="bg-blue-200 shadow-lg py-2 px-4 mt-8 rounded-xl">
-        <p className="text-sm font-inter text-blue-900">Full Stack Developer</p>
+        <p className="text-sm font-inter text-blue-900">Habeeb Amoo</p>
       </div>
-      <h1 className="text-3xl font-spaceG mt-4 mb-6 text-center">Building digital experiences that <span className="text-blue-700">matter.</span></h1>
+      <h1 className="text-3xl font-spaceG mt-4 text-center">Full Stack <span className="text-blue-700">Developer.</span></h1>
+      <p className="mt-1 text-center text-sm text-muted mb-6 font-inter w-[80%]">While crafting digital experiences, I enjoy creating fast, secure and reliable solutions.</p>
       <Button 
         text="Download CV" 
         iconPosition="right" 
