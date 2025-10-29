@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa"
 
 const Hero = () => {
   const toCv = () => {
-    window.location.href = "https://drive.google.com/file/d/1_RJoBufJkZkMF6n-GHslYYGOko2T1Qio/view?usp=drivesdk";
+    window.location.href = "https://drive.google.com/file/d/1TnoG0xwQkDlw2Rj_gtHwbfEobqXFKTnH/view?usp=drive_link";
   };
 
   return (
