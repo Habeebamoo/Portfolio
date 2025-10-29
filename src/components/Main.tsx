@@ -4,7 +4,7 @@ import flashquizImg from "../assets/flash-img1.png"
 import { FaGolang } from "react-icons/fa6"
 import { BiLogoJavascript, BiLogoPostgresql, } from "react-icons/bi"
 import { SiTypescript } from "react-icons/si"
-import { FaReact } from "react-icons/fa"
+import { FaArrowDown, FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
 
@@ -12,9 +12,9 @@ const Main = () => {
   return (
     <>
       <section className="w-[90%] sm:w-[400px] mx-auto">
-        {/* <div className="my-20 flex-center">
+        <div className="my-20 flex-center">
           <FaArrowDown className="animate-bounce" />
-        </div> */}
+        </div>
 
         {/* About me */}
         <div className="mt-25">
@@ -35,11 +35,13 @@ const Main = () => {
             img={maildropImg} 
             title="MailDrop" 
             description="A simple and powerful email marketing platform that enable users to create campaigns, manage leads & subscribers, and send promotional emails to them." 
+            location="/project/maildrop"
           />
           <ProjectDisplay 
             img={flashquizImg} 
             title="FlashQuiz" 
             description="A Quiz website that allows users to take quizzess accross different topics, categories and get ranked based on thier progress." 
+            location="/project/flashquiz"
           />
         </div>
       </section>
@@ -65,7 +67,7 @@ const Main = () => {
       </section>
 
       {/* Contact */}
-      <section className="mt-20 mb-15 w-[85%] md:w-[400px] mx-auto">
+      <section className="mt-20 pb-20 w-[85%] md:w-[400px] mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         <p className="text-muted text-center font-spaceG text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
         <form className="mt-6">

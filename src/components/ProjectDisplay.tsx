@@ -1,15 +1,19 @@
 import { SlArrowRight } from "react-icons/sl"
 import Button from "./Button"
+import { useNavigate } from "react-router"
 
 interface Props {
   img: string,
   title: string,
   description: string
+  location: string
 }
 
-const ProjectDisplay = ({ img, title, description }: Props) => {
-  const toProject = () => {
+const ProjectDisplay = ({ img, title, description, location }: Props) => {
+  const navigate = useNavigate()
 
+  const toProject = () => {
+    navigate(location)
   }
 
   return (
