@@ -35,7 +35,7 @@ const Main = () => {
     setLoading(true)
 
     try {
-      const res = await fetch("", {
+      const res = await fetch("https://contact-app-ea1p.onrender.com/api/v1/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
