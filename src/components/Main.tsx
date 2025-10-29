@@ -28,7 +28,7 @@ const Main = () => {
     if (modal) {
       setTimeout(() => setModal(false), 3000)
     }
-  }, [])
+  }, [modal])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
