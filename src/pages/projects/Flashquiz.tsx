@@ -19,7 +19,7 @@ const Flashquiz = () => {
     <main className="w-[90%] sm:w-[95%] mx-auto min-h-[calc(100vh-4rem)]">
       <h1 className="text-3xl font-spaceG">FlashQuiz</h1>
       <p className="mt-2 text-muted font-inter">Quiz Web Application.</p>
-      <div className="font-spaceG text-sm text-purple-900 flex-start gap-2 mt-4">
+      <div className="font-spaceG text-sm text-purple-900 flex-start flex-wrap gap-2 mt-4">
         <div className="py-1 px-3 bg-mutedLg rounded-lg">React.js</div>
         <div className="py-1 px-3 bg-mutedLg rounded-lg">TypeScript</div>
         <div className="py-1 px-3 bg-mutedLg rounded-lg">Golang</div>
@@ -51,16 +51,16 @@ const Flashquiz = () => {
       </div>
 
       <div className="mt-10 mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-purple-200">
+        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
           <img src={img1} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-purple-200">
+        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
           <img src={img2} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-purple-200">
+        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
           <img src={img3} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-purple-200">
+        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
           <img src={img4} className="rounded-md border-1 border-mutedLg" />
         </div>
       </div>
