@@ -7,10 +7,69 @@ import { SiTypescript } from "react-icons/si"
 import { FaArrowDown, FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
+import { useEffect, useState } from "react"
+import Loading from "./Loading"
+import Modal from "./Modal"
 
 const Main = () => {
+  const [modal, setModal] = useState<boolean>(false)
+  const [modalStatus, setModalStatus] = useState<"success" | "error">("success")
+  const [modalMsg, setModalMsg] = useState<string>("")
+  const [loading, setLoading] = useState<boolean>(false)
+  const [form, setForm] = useState({
+    senderName: "",
+    senderEmail: "",
+    message: "",
+    receiverEmail: "alexjohnson99.uk@gmail.com",
+    subject: "PORTFOLIO CONTACT"
+  })
+
+  useEffect(() => {
+    if (modal) {
+      setTimeout(() => setModal(false), 3000)
+    }
+  }, [])
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+
+    try {
+      const res = await fetch("", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": import.meta.env.VITE_X_API_KEY
+        },
+        body: JSON.stringify(form)
+      })
+      const response = await res.json();
+
+      if (!res.ok) {
+        setModal(true)
+        setModalStatus("error")
+        setModalMsg(response.message)
+        return
+      }
+
+      setModal(true)
+      setModalStatus("success")
+      setModalMsg(response.message)
+
+    } catch (error) {
+      setModal(true)
+      setModalStatus("success")
+      setModalMsg("Something went wrong.")
+
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <>
+      {loading && <Loading />}
+      {modal && <Modal type={modalStatus} msg={modalMsg} />}
       <section className="w-[90%] sm:w-[400px] mx-auto">
         <div className="my-20 flex-center">
           <FaArrowDown className="animate-bounce" />
@@ -19,7 +78,7 @@ const Main = () => {
         {/* About me */}
         <div className="mt-25">
           <h1 className="font-inter text-lg font-bold">About Me</h1>
-          <p className="text-sm font-inter mt-2">
+          <p className="text-sm text-muted font-inter mt-2">
             I am Habeeb Amoo, a software developer from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experience (UX) to building efficient systems.
           </p>
         </div>
@@ -70,18 +129,36 @@ const Main = () => {
       <section className="mt-20 pb-20 w-[85%] md:w-[400px] mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         <p className="text-muted text-center font-spaceG text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
-        <form className="mt-6">
+        <form onSubmit={handleSubmit} className="mt-6">
           <div>
             <label htmlFor="name" className="font-spaceG">Name</label>
-            <input type="text" className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" />
+            <input 
+              type="text" 
+              className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
+              value={form.senderName}
+              onChange={(e) => setForm(prev => ({...prev, senderName: e.target.value}))}
+              required
+            />
           </div>
           <div className="mt-4">
             <label htmlFor="email" className="font-spaceG">Email</label>
-            <input type="email" className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" />
+            <input 
+              type="email" 
+              className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
+              value={form.senderEmail}
+              onChange={(e) => setForm(prev => ({...prev, senderEmail: e.target.value}))}
+              required
+            />
           </div>
           <div className="mt-4">
             <label htmlFor="message" className="font-spaceG">Message</label>
-            <textarea rows={4} className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none resize-none"></textarea>
+            <textarea 
+              rows={4} 
+              className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none resize-none"
+              value={form.message}
+              onChange={(e) => setForm(prev => ({...prev, message: e.target.value}))}
+              required
+            ></textarea>
           </div>
           <button className="bg-purple-900 border-1 border-purple-900 w-full p-2 rounded-md mt-4 text-white font-spaceG cursor-pointer hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900 flex-center gap-2">
             <span>Send Message</span>
