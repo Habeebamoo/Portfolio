@@ -37,7 +37,8 @@ const MailDrop = () => {
           iconPosition="right" 
           icon={<BiLink />} 
           color="bg-purple-900" 
-          activeColor="hover:bg-purple-800 active:bg-purple-800"
+          activeColor="active-btn"
+          border="purple-border"
           action={toLive}  
         />
         <Button 
@@ -46,21 +47,22 @@ const MailDrop = () => {
           icon={<BsGithub />} 
           color="bg-gray-500" 
           activeColor="hover:bg-gray-700 active:bg-gray-700"
+          border="gray-border"
           action={toCode}  
         />
       </div>
 
       <div className="mt-10 mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
+        <div className="p-4 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
           <img src={img1} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
+        <div className="p-4 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
           <img src={img2} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
+        <div className="p-4 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
           <img src={img3} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-3 bg-white border-2 border-mutedLg rounded-lg shadow-lg shadow-gray-300">
+        <div className="p-4 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
           <img src={img4} className="rounded-md border-1 border-mutedLg" />
         </div>
       </div>

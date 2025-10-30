@@ -2,6 +2,7 @@ import { Outlet, useNavigate } from "react-router"
 import ScrollToTop from "../components/ScrollToTop"
 import Button from "../components/Button"
 import { BsArrowLeft } from "react-icons/bs"
+import Footer from "../components/Footer"
 
 const ProjectLayout = () => {
   const navigate = useNavigate()
@@ -15,15 +16,17 @@ const ProjectLayout = () => {
       <ScrollToTop />
       <div className="px-4 pt-10 mb-10">
         <Button 
-          text="Back to Projects" 
+          text="Back" 
           iconPosition="left" 
           icon={<BsArrowLeft />} 
           action={toProjects} 
           color="bg-purple-900" 
-          activeColor="hover:bg-purple-800 active:bg-purple-800" 
+          activeColor="active-btn"
+          border="purple-border" 
         />
       </div>
       <Outlet />
+      <Footer />
     </main>
   )
 }

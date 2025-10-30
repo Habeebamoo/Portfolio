@@ -78,7 +78,7 @@ const Main = () => {
         {/* About me */}
         <div className="mt-25">
           <h1 className="font-inter text-lg font-bold">About Me</h1>
-          <p className="text-sm text-muted font-inter mt-2">
+          <p className="text-sm text-muted font-inter mt-2 text-[15px]">
             I am Habeeb Amoo, a software developer from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experience (UX) to building efficient systems.
           </p>
         </div>
@@ -126,7 +126,7 @@ const Main = () => {
       </section>
 
       {/* Contact */}
-      <section className="mt-20 pb-20 w-[85%] md:w-[400px] mx-auto">
+      <section className="mt-20 w-[85%] md:w-[400px] mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         <p className="text-muted text-center font-spaceG text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
         <form onSubmit={handleSubmit} className="mt-6">
