@@ -8,8 +8,8 @@ import { FaArrowDown, FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
 import { useEffect, useState } from "react"
-import Loading from "./Loading"
 import Modal from "./Modal"
+import Spinner from "./Spinner"
 
 const Main = () => {
   const [modal, setModal] = useState<boolean>(false)
@@ -25,6 +25,23 @@ const Main = () => {
   })
 
   useEffect(() => {
+    const testApi = async () => {
+      const res = await fetch("https://port-contact-app.pxxl.click/api/v1/health", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": import.meta.env.VITE_X_API_KEY
+        },
+      })
+
+      const response = await res.json()
+      console.log(response);
+    };
+
+    testApi()
+  }, [])
+
+  useEffect(() => {
     if (modal) {
       setTimeout(() => setModal(false), 3000)
     }
@@ -35,7 +52,7 @@ const Main = () => {
     setLoading(true)
 
     try {
-      const res = await fetch("https://contact-app-ea1p.onrender.com/api/v1/contact", {
+      const res = await fetch("https://port-contact-app.pxxl.click/api/v1/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +85,6 @@ const Main = () => {
 
   return (
     <>
-      {loading && <Loading />}
       {modal && <Modal type={modalStatus} msg={modalMsg} />}
       <section className="w-[90%] sm:w-[400px] mx-auto">
         <div className="my-20 flex-center">
@@ -160,10 +176,18 @@ const Main = () => {
               required
             ></textarea>
           </div>
-          <button className="bg-purple-900 border-1 border-purple-900 w-full p-2 rounded-md mt-4 text-white font-spaceG cursor-pointer hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900 flex-center gap-2">
-            <span>Send Message</span>
-            <BsSend />
-          </button>
+
+          {loading ?
+            <button className="bg-gray-400 p-3 w-full rounded-md mt-4 text-white cursor-not-allowed flex-center">
+              <Spinner size={17} />
+            </button>
+           : 
+            <button className="bg-purple-900 border-1 border-purple-900 w-full p-2 rounded-md mt-4 text-white font-spaceG cursor-pointer hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900 flex-center gap-2">
+              <span>Send Message</span>
+              <BsSend />
+            </button>
+          }
+
         </form>      
       </section>
     </>
