@@ -26,8 +26,8 @@ const Main = () => {
 
   useEffect(() => {
     const testApi = async () => {
-      const res = await fetch("https://port-contact-app.pxxl.click/api/v1/health", {
-        method: "POST",
+      const res = await fetch("https://contact-app-ea1p.onrender.com/api/v1/health", {
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
           "X-API-KEY": import.meta.env.VITE_X_API_KEY
@@ -52,7 +52,7 @@ const Main = () => {
     setLoading(true)
 
     try {
-      const res = await fetch("https://port-contact-app.pxxl.click/api/v1/contact", {
+      const res = await fetch("https://contact-app-ea1p.onrender.com/api/v1/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
