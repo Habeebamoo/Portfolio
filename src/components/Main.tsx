@@ -8,14 +8,8 @@ import { FaArrowDown, FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
 import { useEffect, useState } from "react"
-import Modal from "./Modal"
-import Spinner from "./Spinner"
 
 const Main = () => {
-  const [modal, setModal] = useState<boolean>(false)
-  const [modalStatus, setModalStatus] = useState<"success" | "error">("success")
-  const [modalMsg, setModalMsg] = useState<string>("")
-  const [loading, setLoading] = useState<boolean>(false)
   const [form, setForm] = useState({
     senderName: "",
     senderEmail: "",
@@ -41,51 +35,8 @@ const Main = () => {
     testApi()
   }, [])
 
-  useEffect(() => {
-    if (modal) {
-      setTimeout(() => setModal(false), 3000)
-    }
-  }, [modal])
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setLoading(true)
-
-    try {
-      const res = await fetch("https://contact-app-ea1p.onrender.com/api/v1/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-API-KEY": import.meta.env.VITE_X_API_KEY
-        },
-        body: JSON.stringify(form)
-      })
-      const response = await res.json();
-
-      if (!res.ok) {
-        setModal(true)
-        setModalStatus("error")
-        setModalMsg(response.message)
-        return
-      }
-
-      setModal(true)
-      setModalStatus("success")
-      setModalMsg(response.message)
-
-    } catch (error) {
-      setModal(true)
-      setModalStatus("error")
-      setModalMsg("Something went wrong.")
-
-    } finally {
-      setLoading(false)
-    }
-  }
-
   return (
     <>
-      {modal && <Modal type={modalStatus} msg={modalMsg} />}
       <section className="w-[90%] sm:w-[400px] mx-auto">
         <div className="my-20 flex-center">
           <FaArrowDown className="animate-bounce" />
@@ -145,11 +96,12 @@ const Main = () => {
       <section className="mt-20 w-[85%] md:w-[400px] mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         <p className="text-muted text-center font-spaceG text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
-        <form onSubmit={handleSubmit} className="mt-6">
+        <form action="https://formspree.io/f/xwpwgvvp" method="POST" className="mt-6">
           <div>
             <label htmlFor="name" className="font-spaceG">Name</label>
             <input 
               type="text" 
+              name="Name"
               className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
               value={form.senderName}
               onChange={(e) => setForm(prev => ({...prev, senderName: e.target.value}))}
@@ -160,6 +112,7 @@ const Main = () => {
             <label htmlFor="email" className="font-spaceG">Email</label>
             <input 
               type="email" 
+              name="Email"
               className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
               value={form.senderEmail}
               onChange={(e) => setForm(prev => ({...prev, senderEmail: e.target.value}))}
@@ -170,6 +123,7 @@ const Main = () => {
             <label htmlFor="message" className="font-spaceG">Message</label>
             <textarea 
               rows={4} 
+              name="Message"
               className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none resize-none"
               value={form.message}
               onChange={(e) => setForm(prev => ({...prev, message: e.target.value}))}
@@ -177,16 +131,10 @@ const Main = () => {
             ></textarea>
           </div>
 
-          {loading ?
-            <button className="bg-gray-400 p-3 w-full rounded-md mt-4 text-white cursor-not-allowed flex-center">
-              <Spinner size={17} />
-            </button>
-           : 
-            <button className="bg-purple-900 border-1 border-purple-900 w-full p-2 rounded-md mt-4 text-white font-spaceG cursor-pointer hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900 flex-center gap-2">
-              <span>Send Message</span>
-              <BsSend />
-            </button>
-          }
+          <button className="bg-purple-900 border-1 border-purple-900 w-full p-2 rounded-md mt-4 text-white font-spaceG cursor-pointer hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900 flex-center gap-2">
+            <span>Send Message</span>
+            <BsSend />
+          </button>
 
         </form>      
       </section>
