@@ -7,34 +7,8 @@ import { SiTypescript } from "react-icons/si"
 import { FaArrowDown, FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
-import { useEffect, useState } from "react"
 
 const Main = () => {
-  const [form, setForm] = useState({
-    senderName: "",
-    senderEmail: "",
-    message: "",
-    receiverEmail: "alexjohnson99.uk@gmail.com",
-    subject: "PORTFOLIO CONTACT"
-  })
-
-  useEffect(() => {
-    const testApi = async () => {
-      const res = await fetch("https://contact-app-ea1p.onrender.com/api/v1/health", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "X-API-KEY": import.meta.env.VITE_X_API_KEY
-        },
-      })
-
-      const response = await res.json()
-      console.log(response);
-    };
-
-    testApi()
-  }, [])
-
   return (
     <>
       <section className="w-[90%] sm:w-[400px] mx-auto">
@@ -103,8 +77,6 @@ const Main = () => {
               type="text" 
               name="Name"
               className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
-              value={form.senderName}
-              onChange={(e) => setForm(prev => ({...prev, senderName: e.target.value}))}
               required
             />
           </div>
@@ -114,8 +86,6 @@ const Main = () => {
               type="email" 
               name="Email"
               className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
-              value={form.senderEmail}
-              onChange={(e) => setForm(prev => ({...prev, senderEmail: e.target.value}))}
               required
             />
           </div>
@@ -125,8 +95,6 @@ const Main = () => {
               rows={4} 
               name="Message"
               className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none resize-none"
-              value={form.message}
-              onChange={(e) => setForm(prev => ({...prev, message: e.target.value}))}
               required
             ></textarea>
           </div>
