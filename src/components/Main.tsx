@@ -13,9 +13,9 @@ const Main = () => {
     <>
       <section className="w-[90%] sm:w-[400px] mx-auto">
         {/* About me */}
-        <div className="mt-30">
+        <div className="mt-40 px-2">
           <h1 className="font-inter text-xl font-bold">About Me</h1>
-          <p className="leading-6 text-gray-600 font-inter mt-3">
+          <p className="leading-6 text-gray-600 font-inter mt-4">
             With various technologies across React.js, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB. I build ready-to-use web applications.
           </p>
           <p className="leading-6 text-gray-600 font-inter mt-4">

@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
       <h1 className="text-xl font-jsans text-orange-600 mt-6" data-aos="zoom-in">Habeeb Amoo,</h1>
       <h1 className="text-3xl font-jsans mt-2" data-aos="zoom-in">Full Stack Developer.</h1>
-      <p className="mt-3 text-gray-600 mb-6 font-inter w-[80%]" data-aos="zoom-in">While crafting digital experiences, I enjoy creating fast, secure and reliable solutions.</p>
+      <p className="mt-3 text-gray-600 mb-6 font-inter w-[90%]" data-aos="zoom-in">While crafting digital experiences, I enjoy creating fast, secure and reliable solutions.</p>
       <div data-aos="slide-up">
         <button
           onClick={toCv} 
