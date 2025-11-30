@@ -6,13 +6,13 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-6 pt-50">
+    <section className="px-6 sm:w-[400px] mx-auto pt-40">
       <div className="h-30 w-30 rounded-full overflow-hidden shadow-lg border-3 border-white" data-aos="slide-down">
         <img src={avatar} className="h-full w-full object-cover" />
       </div>
       <h1 className="text-xl font-jsans text-orange-600 mt-6" data-aos="zoom-in">Habeeb Amoo,</h1>
       <h1 className="text-3xl font-jsans mt-2" data-aos="zoom-in">Full Stack Developer.</h1>
-      <p className="mt-4 text-gray-600 mb-6 font-inter w-[80%]" data-aos="zoom-in">While crafting digital experiences, I enjoy creating fast, secure and reliable solutions.</p>
+      <p className="mt-3 text-gray-600 mb-6 font-inter w-[80%]" data-aos="zoom-in">While crafting digital experiences, I enjoy creating fast, secure and reliable solutions.</p>
       <div data-aos="slide-up">
         <button
           onClick={toCv} 

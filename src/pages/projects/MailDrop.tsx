@@ -48,16 +48,16 @@ const MailDrop = () => {
       </div>
 
       <div className="mt-10 mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="p-6 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
+        <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
           <img src={img1} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-6 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
+        <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
           <img src={img2} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-6 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
+        <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
           <img src={img3} className="rounded-md border-1 border-mutedLg" />
         </div>
-        <div className="p-6 bg-white/30 backdrop-blur-md border-2 border-mutedLg rounded-lg">
+        <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
           <img src={img4} className="rounded-md border-1 border-mutedLg" />
         </div>
       </div>

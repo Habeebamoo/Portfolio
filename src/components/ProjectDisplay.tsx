@@ -15,7 +15,7 @@ const ProjectDisplay = ({ img, title, description, location }: Props) => {
   }
 
   return (
-    <div className="border-2 border-mutedLg backdrop-blur-md p-6 rounded-xl">
+    <div className="border-1 border-mutedLg backdrop-blur-md p-6 rounded-xl">
       <img src={img} className="rounded-md border-1 border-mutedLg shadow-xl" />
       <div className="pl-1 mb-2 mt-6">
         <h1 className="font-inter font-bold text-xl">{title}</h1>
