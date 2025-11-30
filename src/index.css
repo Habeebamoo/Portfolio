@@ -10,6 +10,11 @@
   src: url("./fonts/SpaceGrotesk-Medium.ttf");
 }
 
+@font-face {
+  font-family: "jsans";
+  src: url("./fonts/jsans/static/PlusJakartaSans-Medium.ttf");
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }
@@ -42,6 +47,10 @@
   @apply border-1 border-gray-500;
 }
 
+@utility black-border {
+  @apply border-1 border-black
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(100%);
@@ -61,4 +70,5 @@
   --color-muted: rgb(114, 114, 116);
   --font-spaceG: "spaceG";
   --font-inter: "inter";
+  --font-jsans: "jsans";
 }

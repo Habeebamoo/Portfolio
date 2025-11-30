@@ -11,7 +11,7 @@ interface Props {
 const Button = ({ text, iconPosition, icon, color, activeColor, action, border }: Props) => {
   
   return (
-    <button onClick={action} className={`${color} ${activeColor} ${border} text-white font-spaceG text-sm py-2 px-4 rounded-md flex-center gap-2 cursor-pointer`}>
+    <button onClick={action} className={`${color} ${activeColor} ${border} text-white font-spaceG text-sm py-3 px-4 rounded-md flex-center gap-2 cursor-pointer`}>
       {iconPosition === "left" && icon}
       {text}
       {iconPosition === "right" && icon}

@@ -18,8 +18,8 @@ const Main = () => {
 
         {/* About me */}
         <div className="mt-25">
-          <h1 className="font-inter text-lg font-bold">About Me</h1>
-          <p className="text-sm text-muted font-inter mt-2 text-[15px]">
+          <h1 className="font-inter text-xl font-bold">About Me</h1>
+          <p className="leading-6 text-gray-600 font-inter mt-3">
             I am Habeeb Amoo, a software developer from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experience (UX) to building efficient systems.
           </p>
         </div>
@@ -34,7 +34,7 @@ const Main = () => {
           <ProjectDisplay 
             img={maildropImg} 
             title="MailDrop" 
-            description="A simple and powerful email marketing platform that enable users to create campaigns, manage leads & subscribers, and send promotional emails to them." 
+            description="An Email Marketing tool designed for managing audiences and sending bulk emails." 
             location="/project/maildrop"
           />
           <ProjectDisplay 
@@ -99,7 +99,7 @@ const Main = () => {
             ></textarea>
           </div>
 
-          <button className="bg-purple-900 border-1 border-purple-900 w-full p-2 rounded-md mt-4 text-white font-spaceG cursor-pointer hover:bg-transparent hover:text-purple-900 active:bg-transparent active:text-purple-900 flex-center gap-2">
+          <button className="py-3 px-5 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-md active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center w-full gap-2 mt-4">
             <span>Send Message</span>
             <BsSend />
           </button>

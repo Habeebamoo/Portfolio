@@ -1,5 +1,3 @@
-import { SlArrowRight } from "react-icons/sl"
-import Button from "./Button"
 import { useNavigate } from "react-router"
 
 interface Props {
@@ -17,20 +15,12 @@ const ProjectDisplay = ({ img, title, description, location }: Props) => {
   }
 
   return (
-    <div className="border-2 border-mutedLg backdrop-blur-md p-4 rounded-lg">
-      <img src={img} className="rounded-md border-1 border-mutedLg" />
-      <div className="pl-1 mb-2 mt-4">
+    <div className="border-2 border-mutedLg backdrop-blur-md p-6 rounded-xl">
+      <img src={img} className="rounded-md border-1 border-mutedLg shadow-xl" />
+      <div className="pl-1 mb-2 mt-6">
         <h1 className="font-inter font-bold text-xl">{title}</h1>
-        <p className="mt-1 text-[15px] font-inter text-sm text-muted mb-4">{description}</p>
-        <Button 
-          text="View project" 
-          iconPosition="right" 
-          icon={<SlArrowRight />} 
-          action={toProject}
-          color="bg-purple-900"
-          activeColor="active-btn"
-          border="purple-border"
-        />
+        <p className="mt-2 font-inter text-gray-600 mb-4">{description}</p>
+        <button onClick={toProject} className="py-3 px-5 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-lg active:bg-transparent hover:bg-transparent hover:text-black active:text-black">View Project</button>
       </div>
     </div>
   )

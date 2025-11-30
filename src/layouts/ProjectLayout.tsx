@@ -1,6 +1,5 @@
 import { Outlet, useNavigate } from "react-router"
 import ScrollToTop from "../components/ScrollToTop"
-import Button from "../components/Button"
 import { BsArrowLeft } from "react-icons/bs"
 import Footer from "../components/Footer"
 
@@ -15,15 +14,10 @@ const ProjectLayout = () => {
     <main className="bg-accent">
       <ScrollToTop />
       <div className="px-4 pt-10 mb-10">
-        <Button 
-          text="Back" 
-          iconPosition="left" 
-          icon={<BsArrowLeft />} 
-          action={toProjects} 
-          color="bg-purple-900" 
-          activeColor="active-btn"
-          border="purple-border" 
-        />
+        <button onClick={toProjects} className="py-2 px-4 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-lg active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center gap-2">
+          <BsArrowLeft />
+          <span>Back</span>
+        </button>
       </div>
       <Outlet />
       <Footer />
