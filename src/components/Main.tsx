@@ -14,11 +14,11 @@ const Main = () => {
       <section className="w-[90%] sm:w-[400px] mx-auto">
         {/* About me */}
         <div className="mt-40 px-2">
-          <h1 className="font-inter text-xl font-bold">About Me</h1>
-          <p className="leading-6 text-gray-600 font-inter mt-4">
+          <h1 className="font-inter text-2xl font-bold">About Me</h1>
+          <p className="leading-6 text-gray-600 font-inter mt-6">
             With various technologies across React.js, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB. I build ready-to-use web applications.
           </p>
-          <p className="leading-6 text-gray-600 font-inter mt-4">
+          <p className="leading-6 text-gray-600 font-inter mt-6">
             I am Habeeb Amoo, a software developer from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experiences to building efficient systems.
           </p>
         </div>
@@ -68,7 +68,7 @@ const Main = () => {
       {/* Contact */}
       <section className="mt-20 w-[85%] md:w-[400px] mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
-        <p className="text-muted text-center font-spaceG text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
+        <p className="text-muted text-center font-inter text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
         <form action="https://formspree.io/f/xwpwgvvp" method="POST" className="mt-6">
           <div>
             <label htmlFor="name" className="font-spaceG">Name</label>
