@@ -14,8 +14,8 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed z-20 top-0 left-0 right-0 p-10 flex-center">
-      <nav className="flex-center gap-6 backdrop-blur-md bg-white/30 py-3 px-6 rounded-lg border-1 border-mutedLg text-[#444]">
+    <header className="fixed z-20 top-0 left-0 right-0 p-8 flex-center">
+      <nav className="flex-center gap-6 backdrop-blur-md bg-white/30 py-4 px-6 rounded-xl border-1 border-mutedLg text-[#444]">
         <div onClick={toGitHub}>
           <BsGithub size={26} />
         </div>

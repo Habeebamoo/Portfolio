@@ -15,11 +15,11 @@ const Main = () => {
         {/* About me */}
         <div className="mt-40 px-2">
           <h1 className="font-inter text-2xl font-bold">About Me</h1>
-          <p className="leading-6 text-gray-600 font-inter mt-6">
-            With various technologies across <b>React.js, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB</b>. I build ready-to-use web applications.
+          <p className="leading-6 text-gray-500 font-inter mt-6">
+            With various technologies across React.js, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB. I build ready-to-use web applications.
           </p>
-          <p className="leading-6 text-gray-600 font-inter mt-6">
-            I am Habeeb Amoo, a <b>Software Developer</b> from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experiences to building efficient systems.
+          <p className="leading-6 text-gray-500 font-inter mt-6">
+            I am Habeeb Amoo, a Software Developer from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experiences to building efficient systems.
           </p>
         </div>
       </section>
