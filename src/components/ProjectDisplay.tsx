@@ -17,7 +17,7 @@ const ProjectDisplay = ({ img, title, description, location }: Props) => {
 
   return (
     <div className="border-1 border-mutedLg backdrop-blur-md p-6 rounded-2xl">
-      <div className="w-full h-[190px] rounded-xl overflow-hidden border-1 border-gray-300">
+      <div className="w-full h-[150px] rounded-xl overflow-hidden border-1 border-gray-300">
         <img src={img} className="w-full h-full object-center object-cover" />
       </div>
       <div className="pl-1 mb-2 mt-6">
