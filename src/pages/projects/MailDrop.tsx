@@ -19,7 +19,7 @@ const MailDrop = () => {
     <main className="w-[90%] sm:w-[95%] mx-auto min-h-[calc(100vh-4rem)]">
       <h1 className="text-3xl font-spaceG">MailDrop</h1>
       <p className="mt-2 text-muted font-inter">Email Marketing Platform.</p>
-      <div className="font-spaceG text-sm text-orange-900 flex-start flex-wrap gap-2 mt-4">
+      <div className="font-spaceG text-sm text-orange-700 flex-start flex-wrap gap-2 mt-4">
         <div className="py-1 px-3 bg-orange-100 border-1 border-orange-200 rounded-lg">React.js</div>
         <div className="py-1 px-3 bg-orange-100 border-1 border-orange-200 rounded-lg">TypeScript</div>
         <div className="py-1 px-3 bg-orange-100 border-1 border-orange-200 rounded-lg">Golang</div>
@@ -47,7 +47,7 @@ const MailDrop = () => {
         />
       </div>
 
-      <div className="mt-10 mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 mb-20 w-[90%] mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
           <img src={img1} className="rounded-md border-1 border-mutedLg" />
         </div>

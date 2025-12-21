@@ -16,16 +16,16 @@ const Main = () => {
         <div className="mt-40 px-2">
           <h1 className="font-inter text-2xl font-bold">About Me</h1>
           <p className="leading-6 text-gray-600 font-inter mt-6">
-            With various technologies across React.js, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB. I build ready-to-use web applications.
+            With various technologies across <b>React.js, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB</b>. I build ready-to-use web applications.
           </p>
           <p className="leading-6 text-gray-600 font-inter mt-6">
-            I am Habeeb Amoo, a software developer from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experiences to building efficient systems.
+            I am Habeeb Amoo, a <b>Software Developer</b> from Nigeria who loves turning ideas into working applications. With strong foundation in both frontend and backend technologies, I build end-to-end products from designing user experiences to building efficient systems.
           </p>
         </div>
       </section>
 
       {/* Projects */}
-      <section className="mt-30 w-[90%] md:w-[800px] mx-auto">
+      <section className="mt-30 w-[85%] md:w-[800px] mx-auto">
         <h1 className="font-inter font-bold text-xl text-center mb-10">Some Of My Projects.</h1>
 
         {/* display */}
@@ -71,7 +71,7 @@ const Main = () => {
         <p className="text-muted text-center font-inter text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
         <form action="https://formspree.io/f/xwpwgvvp" method="POST" className="mt-6">
           <div>
-            <label htmlFor="name" className="font-spaceG">Name</label>
+            <label htmlFor="name" className="font-inter">Name</label>
             <input 
               type="text" 
               name="Name"
@@ -80,7 +80,7 @@ const Main = () => {
             />
           </div>
           <div className="mt-4">
-            <label htmlFor="email" className="font-spaceG">Email</label>
+            <label htmlFor="email" className="font-inter">Email</label>
             <input 
               type="email" 
               name="Email"
@@ -89,7 +89,7 @@ const Main = () => {
             />
           </div>
           <div className="mt-4">
-            <label htmlFor="message" className="font-spaceG">Message</label>
+            <label htmlFor="message" className="font-inter">Message</label>
             <textarea 
               rows={4} 
               name="Message"
