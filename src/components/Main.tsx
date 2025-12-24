@@ -7,7 +7,6 @@ import { SiTypescript } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
-import { FcNext } from "react-icons/fc"
 import { RiNextjsFill } from "react-icons/ri"
 
 const Main = () => {
