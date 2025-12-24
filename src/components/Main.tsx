@@ -7,6 +7,8 @@ import { SiTypescript } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { BsSend } from "react-icons/bs"
+import { FcNext } from "react-icons/fc"
+import { RiNextjsFill } from "react-icons/ri"
 
 const Main = () => {
   return (
@@ -59,6 +61,7 @@ const Main = () => {
             <div><BiLogoJavascript size={40} color="black" /></div>
             <div><SiTypescript size={30} color="black" /></div>
             <div><FaReact size={30} color="black" /></div>
+            <div><RiNextjsFill size={36} color="black" /></div>
             <div><LiaNodeJs size={40} color="black" /></div>
             <div><BiLogoPostgresql size={35} color="black" /></div>
           </div>
