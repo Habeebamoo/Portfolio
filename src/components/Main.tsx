@@ -55,12 +55,12 @@ const Main = () => {
 
           {/* content */}
           <div className="flex-center gap-3 absolute top-0 bottom-0 animate-scroll">
-            <div className="text-blue-400"><FaGolang size={50} /></div>
-            <div className="text-yellow-300"><BiLogoJavascript size={40} /></div>
-            <div className="text-blue-800"><SiTypescript size={30} /></div>
-            <div className="text-blue-400"><FaReact size={30} /></div>
-            <div className="text-green-500"><LiaNodeJs size={40} /></div>
-            <div className="text-cyan-700"><BiLogoPostgresql size={35} /></div>
+            <div><FaGolang size={50} color="black" /></div>
+            <div><BiLogoJavascript size={40} color="black" /></div>
+            <div><SiTypescript size={30} color="black" /></div>
+            <div><FaReact size={30} color="black" /></div>
+            <div><LiaNodeJs size={40} color="black" /></div>
+            <div><BiLogoPostgresql size={35} color="black" /></div>
           </div>
         </div>
       </section>
