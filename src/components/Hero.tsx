@@ -1,4 +1,6 @@
 import avatar from "../assets/anime.jpeg"
+import { motion } from "framer-motion";
+import { heroText } from "../utils/animation";
 
 const Hero = () => {
   const toCv = () => {
@@ -7,13 +9,23 @@ const Hero = () => {
 
   return (
     <section className="px-6 sm:w-[400px] mx-auto pt-40">
-      <div className="h-30 w-30 rounded-full overflow-hidden shadow-lg border-3 border-white" data-aos="slide-down">
+      <div className="h-30 w-30 rounded-full overflow-hidden shadow-lg border-3 border-white">
         <img src={avatar} className="h-full w-full object-cover" />
       </div>
-      <h1 className="text-xl font-jsans text-orange-600 mt-6" data-aos="zoom-in">Habeeb Amoo,</h1>
-      <h1 className="text-3xl font-outfit mt-2" data-aos="zoom-in">Full Stack Developer.</h1>
-      <p className="mt-2 text-gray-600 mb-6 w-[90%] font-inter" data-aos="zoom-in">I craft premium digital experiences, creating fast, secure and reliable solutions.</p>
-      <div data-aos="slide-up">
+
+      <motion.div
+        initial="hidden"
+        animate="show"
+        variants={heroText}
+      >
+        <h1 className="text-xl font-jsans text-orange-600 mt-6" data-aos="zoom-in">Habeeb Amoo,</h1>
+        <h1 className="text-3xl font-outfit mt-2" data-aos="zoom-in">Software Developer.</h1>
+        <p className="mt-2 text-gray-600 mb-6 w-[90%] font-inter" data-aos="zoom-in">
+          I craft premium digital experiences, creating fast, secure and reliable solutions.
+        </p>
+      </motion.div>
+
+      <div>
         <button
           onClick={toCv} 
           className="py-3 px-5 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-xl active:bg-transparent hover:bg-transparent hover:text-black active:text-black">
