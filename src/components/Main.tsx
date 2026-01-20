@@ -17,10 +17,10 @@ const Main = () => {
         <div className="mt-40 px-2">
           <h1 className="font-inter text-2xl font-bold">About Me</h1>
           <p className="leading-6 text-gray-600 font-inter mt-6">
-            I craft scalable web applications that helps businesses grow, streamline operations, and deliver real-world results - systems that are fast, scalable, and built to last
+            I craft scalable web applications that helps businesses grow, streamline operations, and deliver real-world results. therefore building systems that are fast, scalable, and built to last
           </p>
           <p className="leading-6 text-gray-600 font-inter mt-6">
-            I am Habeeb Amoo, a software developer with over 2+ years of experience in frontend and backend development. I specialize in building robust applications, API design, and end-to-end product development
+            I am Habeeb Amoo, a software developer with over 2+ years of building high performance applications. with mastery of frontend and backend development. I specialize in building robust applications, API design, and end-to-end product development
           </p>
         </div>
       </section>
