@@ -16,16 +16,16 @@ const ProjectDisplay = ({ img, title, description, location }: Props) => {
   }
 
   return (
-    <div className="bg-gray-950 border border-gray-900 backdrop-blur-lg p-6 rounded-2xl">
-      <div className="rounded-xl overflow-hidden border border-gray-700">
+    <div className="border-1 border-mutedLg backdrop-blur-md p-6 rounded-2xl">
+      <div className="rounded-xl overflow-hidden border-1 border-gray-300">
         <img src={img} className="w-full h-full" />
       </div>
       <div className="pl-1 mb-2 mt-6">
-        <h1 className="font-inter text-white font-bold text-xl">{title}</h1>
+        <h1 className="font-inter font-bold text-xl">{title}</h1>
 
-        <p className="mt-2 font-inter text-[15px] text-gray-200 mb-4">{description}</p>
+        <p className="mt-2 font-inter text-[15px] text-gray-500 mb-4">{description}</p>
 
-        <button onClick={toProject} className="py-4 px-6 bg-gray-900 text-white cursor-pointer text-sm font-jsans rounded-xl flex-center gap-2">
+        <button onClick={toProject} className="py-4 px-6 bg-gray-200 cursor-pointer text-sm font-jsans rounded-xl flex-center gap-2">
           View Project
           <SlArrowRight size={12} />
         </button>
