@@ -16,14 +16,15 @@ const Flashquiz = () => {
   }
 
   return (
-    <main className="w-[90%] sm:w-[95%] mx-auto min-h-[calc(100vh-4rem)]">
+    <main className="mx-auto min-h-[calc(100vh-4rem)]">
       <h1 className="text-3xl font-spaceG">FlashQuiz</h1>
       <p className="mt-2 text-muted font-inter">Quiz Web Application.</p>
+
       <div className="font-spaceG text-sm text-orange-700 flex-start flex-wrap gap-2 mt-4">
-        <div className="py-1 px-3 bg-orange-100 border-1 border-orange-200 rounded-lg">React.js</div>
-        <div className="py-1 px-3 bg-orange-100 border-1 border-orange-200 rounded-lg">TypeScript</div>
-        <div className="py-1 px-3 bg-orange-100 border-1 border-orange-200 rounded-lg">Golang</div>
-        <div className="py-1 px-3 bg-orange-100 border-1 border-orange-200 rounded-lg">PostgreSQL</div>
+        <div className="py-1 px-3 bg-orange-100 border border-orange-200 rounded-lg">React.js</div>
+        <div className="py-1 px-3 bg-orange-100 border border-orange-200 rounded-lg">TypeScript</div>
+        <div className="py-1 px-3 bg-orange-100 border border-orange-200 rounded-lg">Golang</div>
+        <div className="py-1 px-3 bg-orange-100 border border-orange-200 rounded-lg">PostgreSQL</div>
       </div>
 
       {/* About */}
@@ -32,7 +33,7 @@ const Flashquiz = () => {
 
       {/* Links */}
       <div className="mt-5 flex-start gap-3">
-        <button onClick={toLive} className="py-3 px-5 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-lg active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center gap-2">
+        <button onClick={toLive} className="py-3 px-5 bg-black border cursor-pointer border-black text-white text-sm font-jsans rounded-lg active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center gap-2">
           <span>View Live</span>
           <BiLink />
         </button>
@@ -48,17 +49,17 @@ const Flashquiz = () => {
       </div>
 
       <div className="mt-10 mb-20 w-[90%] mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="p-6 bg-white/30 backdrop-blur-lg border-1 border-mutedLg rounded-lg">
-          <img src={img1} className="rounded-md border-1 border-mutedLg" />
+        <div className="p-6 bg-white/30 backdrop-blur-lg border border-mutedLg rounded-lg">
+          <img src={img1} className="rounded-md border border-mutedLg" />
         </div>
-        <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
-          <img src={img2} className="rounded-md border-1 border-mutedLg" />
+        <div className="p-6 bg-white/30 backdrop-blur-md border border-mutedLg rounded-lg">
+          <img src={img2} className="rounded-md border border-mutedLg" />
         </div>
-        <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
-          <img src={img3} className="rounded-md border-1 border-mutedLg" />
+        <div className="p-6 bg-white/30 backdrop-blur-md border border-mutedLg rounded-lg">
+          <img src={img3} className="rounded-md border border-mutedLg" />
         </div>
-        <div className="p-6 bg-white/30 backdrop-blur-md border-1 border-mutedLg rounded-lg">
-          <img src={img4} className="rounded-md border-1 border-mutedLg" />
+        <div className="p-6 bg-white/30 backdrop-blur-md border border-mutedLg rounded-lg">
+          <img src={img4} className="rounded-md border border-mutedLg" />
         </div>
       </div>
     </main>

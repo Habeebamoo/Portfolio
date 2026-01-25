@@ -11,15 +11,18 @@ const ProjectLayout = () => {
   }
 
   return (
-    <main className="bg-accent">
+    <main className="w-[90%] sm:w-[95%] mx-auto">
       <ScrollToTop />
-      <div className="px-4 pt-10 mb-10">
-        <button onClick={toProjects} className="py-2 px-4 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-lg active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center gap-2">
+
+      <div className="pt-10 mb-10">
+        <button onClick={toProjects} className="py-2 px-4 bg-black border cursor-pointer border-black text-white text-sm font-jsans rounded-lg active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center gap-2">
           <BsArrowLeft />
           <span>Back</span>
         </button>
       </div>
+
       <Outlet />
+
       <Footer />
     </main>
   )
