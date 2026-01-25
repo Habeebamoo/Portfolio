@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-6 sm:w-[400px] mx-auto pt-40">
+    <section className="px-6 sm:w-100 mx-auto pt-40">
       <div className="h-30 w-30 rounded-full overflow-hidden shadow-lg border-3 border-white">
         <img src={avatar} className="h-full w-full object-cover" />
       </div>
@@ -28,7 +28,7 @@ const Hero = () => {
       <div>
         <button
           onClick={toCv} 
-          className="py-3 px-5 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-xl active:bg-transparent hover:bg-transparent hover:text-black active:text-black">
+          className="py-3 px-5 bg-black border cursor-pointer border-black text-white text-sm font-jsans rounded-xl active:bg-transparent hover:bg-transparent hover:text-black active:text-black">
           Download CV
         </button>
       </div>
