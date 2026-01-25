@@ -52,7 +52,7 @@ const Main = () => {
 
         <div className="relative overflow-hidden w-[300px] rounded-3xl mx-auto p-5">
           {/* gradient edges */}
-          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-gray-50 via-transparent to-gray-50"></div>
+          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-gray-50 from-0% via-transparent via-90% to-gray-50 to-100%"></div>
 
           {/* content */}
           <div className="flex-center gap-3 absolute top-0 bottom-0 animate-scroll">

@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop"
 
 const Home = () => {
   return (
-    <main className="bg-accent min-h-[calc(100vh-4rem)]">
+    <main className="min-h-[calc(100vh-4rem)]">
       <ScrollToTop />
       <Header />
       <Hero />
