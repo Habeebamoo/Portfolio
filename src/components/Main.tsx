@@ -12,7 +12,7 @@ import { RiNextjsFill } from "react-icons/ri"
 const Main = () => {
   return (
     <>
-      <section className="w-[90%] sm:w-[400px] mx-auto">
+      <section className="w-[90%] sm:w-100 mx-auto">
         {/* About me */}
         <div className="mt-40 px-2">
           <h1 className="font-inter text-2xl font-bold">About Me</h1>
@@ -26,7 +26,7 @@ const Main = () => {
       </section>
 
       {/* Projects */}
-      <section className="mt-30 w-[85%] md:w-[800px] mx-auto">
+      <section className="mt-30 w-[85%] md:w-200 mx-auto">
         <h1 className="font-inter font-bold text-xl text-center mb-10">Some Of My Projects.</h1>
 
         {/* display */}
@@ -47,28 +47,28 @@ const Main = () => {
       </section>
 
       {/* Tech Stack */}
-      <section className="mt-30 w-[90%] md:w-[400px] mx-auto">
+      <section className="mt-30 w-[90%] md:w-100 mx-auto">
         <h1 className="font-inter font-bold text-xl text-center mb-7">Technologies.</h1>   
 
-        <div className="relative overflow-hidden w-[300px] rounded-3xl mx-auto p-5">
+        <div className="relative overflow-hidden w-75 mx-auto dimmed p-5">
           {/* gradient edges */}
-          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-gray-50 from-0% via-transparent via-90% to-gray-50 to-100%"></div>
+          <div className="pointer-events-none absolute inset-0 z-10"></div>
 
           {/* content */}
           <div className="flex-center gap-3 absolute top-0 bottom-0 animate-scroll">
-            <div><FaGolang size={50} color="black" /></div>
-            <div><BiLogoJavascript size={40} color="black" /></div>
-            <div><SiTypescript size={30} color="black" /></div>
-            <div><FaReact size={30} color="black" /></div>
-            <div><RiNextjsFill size={36} color="black" /></div>
-            <div><LiaNodeJs size={40} color="black" /></div>
-            <div><BiLogoPostgresql size={35} color="black" /></div>
+            <div className="text-gray-500"><FaGolang size={50} /></div>
+            <div className="text-gray-500"><BiLogoJavascript size={40} /></div>
+            <div className="text-gray-500"><SiTypescript size={30} /></div>
+            <div className="text-gray-500"><FaReact size={30} /></div>
+            <div className="text-gray-500"><RiNextjsFill size={36} /></div>
+            <div className="text-gray-500"><LiaNodeJs size={40} /></div>
+            <div className="text-gray-500"><BiLogoPostgresql size={35} /></div>
           </div>
         </div>
       </section>
 
       {/* Contact */}
-      <section className="mt-20 w-[85%] md:w-[400px] mx-auto">
+      <section className="mt-20 w-[85%] md:w-100 mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         <p className="text-muted text-center font-inter text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
         <form action="https://formspree.io/f/xwpwgvvp" method="POST" className="mt-6">
