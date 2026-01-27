@@ -12,7 +12,7 @@ import { RiNextjsFill } from "react-icons/ri"
 const Main = () => {
   return (
     <>
-      <section>
+      <section className="sm:w-100 mx-auto">
         {/* About me */}
         <div className="mt-40 px-2">
           <h1 className="font-inter text-2xl font-bold">About Me</h1>
