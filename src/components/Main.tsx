@@ -12,7 +12,7 @@ import { RiNextjsFill } from "react-icons/ri"
 const Main = () => {
   return (
     <>
-      <section className="w-[90%] sm:w-100 mx-auto">
+      <section>
         {/* About me */}
         <div className="mt-40 px-2">
           <h1 className="font-inter text-2xl font-bold">About Me</h1>
@@ -26,7 +26,7 @@ const Main = () => {
       </section>
 
       {/* Projects */}
-      <section className="mt-30 w-[85%] md:w-200 mx-auto">
+      <section className="mt-30 px-4 md:w-200 mx-auto">
         <h1 className="font-inter font-bold text-xl text-center mb-10">Some Of My Projects.</h1>
 
         {/* display */}
@@ -47,7 +47,7 @@ const Main = () => {
       </section>
 
       {/* Tech Stack */}
-      <section className="mt-30 w-[90%] md:w-100 mx-auto">
+      <section className="mt-30 md:w-100 mx-auto">
         <h1 className="font-inter font-bold text-xl text-center mb-7">Technologies.</h1>   
 
         <div className="relative overflow-hidden w-75 mx-auto dimmed p-5">
@@ -68,7 +68,7 @@ const Main = () => {
       </section>
 
       {/* Contact */}
-      <section className="mt-20 w-[85%] md:w-100 mx-auto">
+      <section className="mt-20 px-2 md:w-100 mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
         <p className="text-muted text-center font-inter text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
         <form action="https://formspree.io/f/xwpwgvvp" method="POST" className="mt-6">

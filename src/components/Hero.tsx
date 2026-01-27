@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-6 sm:w-100 mx-auto pt-40">
+    <section className="sm:w-100 mx-auto pt-40">
       <div className="h-30 w-30 rounded-full overflow-hidden shadow-lg border-3 border-white">
         <img src={avatar} className="h-full w-full object-cover" />
       </div>
