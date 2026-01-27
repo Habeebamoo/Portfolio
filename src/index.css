@@ -45,15 +45,19 @@
 }
 
 @utility purple-border {
-  @apply border-1 border-purple-900;
+  @apply border border-purple-900;
 }
 
 @utility gray-border {
-  @apply border-1 border-gray-500;
+  @apply border border-gray-500;
 }
 
 @utility black-border {
-  @apply border-1 border-black
+  @apply border border-black;
+}
+
+@utility contact-input {
+  @apply border bg-gray-50 border-gray-100 rounded-md w-full p-3 text-sm block mt-2 focus:outline-none resize-none;
 }
 
 @keyframes scroll {

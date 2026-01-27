@@ -26,7 +26,7 @@ const Main = () => {
       </section>
 
       {/* Projects */}
-      <section className="mt-30 px-4 md:w-200 mx-auto">
+      <section className="mt-30 px-2 md:w-200 mx-auto">
         <h1 className="font-inter font-bold text-xl text-center mb-10">Some Of My Projects.</h1>
 
         {/* display */}
@@ -70,14 +70,18 @@ const Main = () => {
       {/* Contact */}
       <section className="mt-20 px-2 md:w-100 mx-auto">
         <h1 className="font-inter font-bold text-2xl text-center">Let's work together.</h1> 
-        <p className="text-muted text-center font-inter text-sm mt-1">I'm always interested in hearing about new projects and oppurtunities</p>
+        
+        <p className="text-muted text-center font-inter text-sm mt-1">
+          I'm always interested in hearing about new projects and oppurtunities
+        </p>
+
         <form action="https://formspree.io/f/xwpwgvvp" method="POST" className="mt-6">
           <div>
             <label htmlFor="name" className="font-inter">Name</label>
             <input 
               type="text" 
               name="Name"
-              className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
+              className="contact-input" 
               required
             />
           </div>
@@ -86,7 +90,7 @@ const Main = () => {
             <input 
               type="email" 
               name="Email"
-              className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none" 
+              className="contact-input" 
               required
             />
           </div>
@@ -95,12 +99,12 @@ const Main = () => {
             <textarea 
               rows={4} 
               name="Message"
-              className="border-1 border-mutedLg rounded-md w-full p-3 text-sm mt-1 focus:outline-none resize-none"
+              className="contact-input"
               required
             ></textarea>
           </div>
 
-          <button className="py-3 px-5 bg-black border-1 cursor-pointer border-black text-white text-sm font-jsans rounded-md active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center w-full gap-2 mt-4">
+          <button className="py-3 px-5 bg-black border cursor-pointer border-black text-white text-sm font-jsans rounded-md active:bg-transparent hover:bg-transparent hover:text-black active:text-black flex-center w-full gap-2 mt-4">
             <span>Send Message</span>
             <BsSend />
           </button>
