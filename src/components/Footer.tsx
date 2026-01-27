@@ -8,10 +8,10 @@ const Footer = () => {
       <hr className="text-mutedLg" />
 
       <p className="mt-6 text-center font-inter text-sm text-muted">
-        &copy; {year} Habeeb Amoo. All rights reserved.
+        Copywright &copy; {year} Habeeb Amoo.
       </p>
 
-      <div className="flex-center gap-6 text-muted mt-4">
+      <div className="flex-center gap-6 text-muted mt-6">
         <a 
           href="https://github.com/Habeebamoo"
           target="_blank"
